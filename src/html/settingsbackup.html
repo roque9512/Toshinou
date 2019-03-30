@@ -1,0 +1,117 @@
+<!-- created by Freshek on 30.10.2017 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Toshinou Revamped Delta Configuration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .settingsTitle{
+      background-color: #dfd3d3;
+    }
+  </style>
+</head>
+<body class="container">
+    <center>
+      <h1>Toshinou Revamped Delta</h1>
+    </center>
+    <p class="text-center" data-resource="toshidescription">A cheat/tool/bot/whatever for a browser flash game named DarkOrbit. It does some pretty neat stuff and is still under heavy development.</p>
+    <p class="text-center"><span data-resource="discordserver">Discord Server</span>: <a href="https://discord.gg/nQ2VWVU">https://discord.gg/nQ2VWVU</a></p>
+  <p class="text-center" data-resource="translateby"></p>
+    <form id="optionsdata">
+    <table class="table table-bordered">
+      <tr>
+      	<td colspan="4">
+      		<center><button type="submit" class="btn btn-success" form="optionsdata"><span data-resource="saveall">Save All</span></button></center>
+      	</td>
+      </tr>
+      <tr>
+      <th class="settingsTitle" colspan="4"><center><span data-resource="appearance">Appearance</span></center></th>
+      </tr>
+      <tr>
+        <td>
+          <label for="headerColor"><span data-resource="headercolor">Header color</span></label>
+          <input type="color" id="headerColor" value="#16262f">
+        </td>
+        <td>
+          <label for="headerOpacity"><span data-resource="opacity">opacity</span></label>
+          <input type="range" id="headerOpacity" min="0" max="1" step="0.01" value="0.9">
+        </td>
+        <td>
+          <label for="windowColor"><span data-resource="windowbackgroundcolor">Window background color</span></label>
+          <input type="color" id="windowColor" value="#16262f">
+        </td>
+        <td>
+          <label for="windowOpacity"><span data-resource="opacity">opacity</span></label>
+          <input type="range" id="windowOpacity" min="0" max="1" step="0.01" value="0.8">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="windowsToTabs" />
+          <label for="windowsToTabs"><span data-resource="windowstotabs">Tabs instead of windows</span></label>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="speedformat">Speed format</span></th>
+        <td>
+          <input type="radio" id="speedFormat_min" name="speedFormat" value="min">
+          <label for="speedFormat_min">uri/<span data-resource="min">min</span></label>
+        </td>
+        <td>
+          <input type="radio" id="speedFormat_hour" name="speedFormat" value="hour" checked>
+          <label for="speedFormat_hour">uri/<span data-resource="hour">hour</span></label>
+        </td>
+      </tr>
+      <tr>
+        <th class="settingsTitle" colspan="4"><center><span data-resource="shipsettings">Ship settings</span></center></th>
+      </tr>
+      <tr>
+        <td>
+          <b><label for="reviveType"><span data-resource="reviveat">Revive at</span>: </label></b>
+          <select id="reviveType">
+            <option value="0"><span data-resource="base">Base</span></option>
+            <option value="1"><span data-resource="gate">Gate</span></option>
+            <option value="2"><span data-resource="spot">Spot</span></option>
+            <option value="3"><span data-resource="norevive">No repair</span></option>
+          </select>
+        </td>
+        <td>
+          <b><label for="reviveLimit"><span data-resource="revivelimit">Revive limit</span>: </label></b>
+          <input type="number" id="reviveLimit" min="1" max="99" value="5">
+        </td>
+        
+      </tr>
+      <tr>
+        <th class="settingsTitle" colspan="4"><center><span data-resource="refreshsettings">Refresh settings</span></center></th>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="refreshsettings">Refresh page function settings</span></th>
+        <td>
+          <input type="checkbox" id="enableRefresh">
+          <label for="enableRefresh"><span data-resource="enablerefresh">Enable refresh function</span></label>
+        </td>
+        <td>
+          <label for="refreshTime"><span data-resource="refreshtime">Refresh interval (min)</span></label>
+          <input type="number" id="refreshTime" min="30" max="300" value="60">
+        </td>
+      </tr>
+      <tr>
+          <th class="settingsTitle" colspan="4"><center><span data-resource="advanced">Advanced settings</span></center></th>
+        </tr>
+      <tr>
+          <th colspan="2"><span data-resource="advanced">Advanced (beginners, go away!)</span></th>
+          <td colspan="2">
+            <label for="timerTick"><span data-resource="logictick">Logic tick (ms)</span></label>
+            <input type="number" id="timerTick" min="50" max="20000" value="300">
+          </td>
+        </tr>
+    </table>
+    </form>
+  <script src="/js/libs/jquery-3.2.1.min.js"></script>
+  <script src="settings.js"></script>
+</body>
+
+</html>
