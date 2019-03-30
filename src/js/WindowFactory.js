@@ -6,7 +6,7 @@ class WindowFactory {
 
     if (!window.mainFrameWindow) {
       window.mainFrameWindow = this.windowsStructure({
-        text: "Toshinou Infinite",
+        text: "Toshinou Infinite | Premium ",
         isMain: true
       })[0];
 

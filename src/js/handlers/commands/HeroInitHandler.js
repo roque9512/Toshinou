@@ -1,7 +1,7 @@
 class HeroInitHandler {
-  static get ID() {
-    return 23148; 
-  }
+	static get ID() {
+		return 8273; 
+	}
 
 	constructor(f) {
 		this._handler = function (e, a) {
