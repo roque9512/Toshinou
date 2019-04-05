@@ -6,7 +6,7 @@ class WindowFactory {
 
     if (!window.mainFrameWindow) {
       window.mainFrameWindow = this.windowsStructure({
-        text: "Toshinou Infinite | Premium ",
+        text: "ToshiBot|Cool Kids Edition",
         isMain: true
       })[0];
 

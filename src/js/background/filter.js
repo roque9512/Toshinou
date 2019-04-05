@@ -6,7 +6,7 @@ Lolis > BP
 */
 
 
-let _hash = "ef3275b14b6ccc00c09158115273cc00";
+let _hash = "ae18a812559bd678b352df05feeacc00";
 
 let blacklist = [
 	"main-frame",

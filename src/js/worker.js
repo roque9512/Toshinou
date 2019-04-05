@@ -38,7 +38,7 @@ $(document).ready(function () {
 			textAlign: "center"
 		});
 
-		jQuery("<h1>").text("The tool detected changes in the game.").appendTo(warning);
+		jQuery("<h1>").text("The tool detected changes in the game, Darkorbit maybe updated.").appendTo(warning);
 		jQuery("<h2>").text("Loading stopped! Your account has to stay safe.").appendTo(warning);
 		jQuery("<h3>").text("Reason: UNSAFE JS").appendTo(warning);
 
