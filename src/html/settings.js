@@ -1,5 +1,5 @@
 /*
-Still made by freshek in 2017
+Created by Freshek on 31.10.2017
 */
 
 function saveOptions(e) {

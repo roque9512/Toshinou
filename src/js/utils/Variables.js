@@ -1,122 +1,103 @@
-/*
--
--
--
----Updated by zamvea---
----04-04-2019---
----18:08---
--
--
--
-*/
-
 class Variables {
 	static get assetCreateX() {
-		return "_-Yq";
+		return "_-I4A";
 	}
 	
 	static get assetCreateY() {
-		return "_-O4T";
+		return "_-9S";
 	}
 	
 	static get boxType() {
-		return "_-9O";
+		return "_-6m";
 	}
 	
 	static get gateId() {
-		return "_-e2o";
+		return "_-zU";
 	}
 	
 	static get gateType() {
-		return "_-w2N";
+		return "_-Z4e";
 	}
 	
 	static get attackerId() {
-		return "_-v1O";
+		return "_-H1q";
 	}
 	
 	static get heroAttackedId() {
-		return "_-a1N";
+		return "_-aa";
 	}
 	
 	static get attackHp() {
-		return "_-j12";
+		return "_-B2d";
 	}
 	
 	static get attackShd() {
-		return "_-q1A";
+		return "_-v3x";
 	}
 	
 	static get heroInitMaxHp() {
-		return "_-l1r";
+		return "_-V3Y";
 	}
 	
 	static get heroInitMaxShd() {
-		return "_-34m";
+		return "_-D4G";
 	}
 	
 	static get heroInitHp() {
-		return "_-h4p";
+		return "_-o1k";
 	}
 	
 	static get heroPetId() {
-		return "_-p26";
+		return "_-f5";
 	}
 	
 	static get hpUpdateMaxHp() {
-		return "_-s4f";
+		return "_-J2A";
 	}
 	
 	static get hpUpdateHp() {
-		return "_-t4u";
+		return "_-y1o";
 	}
 	
 	static get heroUpdateShd() {
-		return "_-43c";
+		return "_-l1B";
 	}
 	
 	static get resource() {
-		return "_-72i";
-	}
-	
-	static get attackerId() {
-		return "_-v1O";
-	}
-	
-	static get attackedId() {
-		return "_-fs";
+		return "_-E3W";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-A3w";
+		return "_-uS";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-g1m";
-	}
-	
-	static get moveDuration() {
-		return "_-UB";
+		return "_-B15";
 	}
 	
 	static get selectMaxHp() {
-		return "_-s4f";
+		return "_-J2A";
 	}
 	
 	static get selectMaxShd() {
-		return "_-34m";
+		return "_-D4G";
 	}
 	
 	static get selectHp() {
-		return "_-t4u";
+		return "_-y1o";
 	}
+
+	static get moveDuration() {
+		return "_-T4N";
+	}
+		
 	
 	static get resourceType() {
-		return "_-Y31";
+		return "_-9A";
 	}
 
 	static get battlestationClanDiplomacy() {
-		return "_-6I"; 
+		return "_-049"; 
 	}
 	
 }

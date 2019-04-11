@@ -5,8 +5,7 @@ BP Sucks
 Lolis > BP
 */
 
-
-let _hash = "ae18a812559bd678b352df05feeacc00";
+let _hash = "808b33e4d7c201322bd4454b91ed0c00";
 
 let blacklist = [
 	"main-frame",
@@ -20,7 +19,8 @@ let blacklist = [
 	"cnt_minimize_window",
 	"ui-draggable",
 	"ui-draggable-handle",
-	"dompath="
+	"dompath=",
+	"stack"
 ]
 
 chrome.webRequest.onBeforeRequest.addListener(
@@ -28,7 +28,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 		let result = false;
 		if(details.url.indexOf("main.swf") != -1){
 			if(details.url.indexOf(_hash) == -1){
-				
+				alert("BOT OFFLINE, GAME WILL NOT LOAD!!");
 			}
 		}
 		blacklist.forEach(item => {

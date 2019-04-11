@@ -38,7 +38,7 @@ $(document).ready(function () {
 			textAlign: "center"
 		});
 
-		jQuery("<h1>").text("The tool detected changes in the game, Darkorbit maybe updated.").appendTo(warning);
+		jQuery("<h1>").text("The tool detected changes in the game.").appendTo(warning);
 		jQuery("<h2>").text("Loading stopped! Your account has to stay safe.").appendTo(warning);
 		jQuery("<h3>").text("Reason: UNSAFE JS").appendTo(warning);
 
@@ -197,13 +197,18 @@ function init() {
 	clearBtn.on('click', (e) => {
 		chrome.storage.local.set(window.settings.defaults);
 	});
-	// LUL
+	
+	/* Start the bot again after auto-refresh */
 	chrome.storage.local.get({"refreshed" :false}, function(v){
-		if(v && window.settings.settings.enableRefresh){
-			cntBtnPlay.click();
-			chrome.storage.local.set({"refreshed" :false});
+		if(v.refreshed && window.settings.settings.enableRefresh){
+			let cntBtnPlay = $('.cnt_btn_play .btn_play');
+
+			cntBtnPlay.html("Stop");
+			cntBtnPlay.removeClass('in_play').addClass('in_stop');
+			window.settings.settings.pause = false;
 		}
 	});
+	chrome.storage.local.set({"refreshed" :false});
 }
 
 
@@ -236,6 +241,7 @@ function logic() {
 	
 	if(window.settings.settings.fleeFromEnemy && window.fleeFromEnemy && window.enemy){
 		api.flyingMode();
+		// Use spectrum hability when running from enemy if not too close to gate.
 		window.fleeingFromEnemy = true;
 		api.fleeFromEnemy(window.enemy);
 		return;
@@ -256,8 +262,6 @@ function logic() {
 	}
 
 	if(api.sleeping()){
-		// i forgot what i was going to use this for :|
-		// call api.sleep(ms) and the bot will only execute the functions above this check
 		return;
 	}
 
@@ -438,9 +442,6 @@ function logic() {
 			return;
 		} else if(!window.settings.settings.palladium && window.settings.settings.changeMode){
 			// Change to flying mode while looking for npcs/boxes.
-			// It doesn't change while collecting because the ship might get stuck for a few seconds
-			// after changing config.
-			// I don't know how this would work on palladium, so we don't do it while there
 			if (window.settings.settings.autoChangeConfig && window.settings.settings.flyingConfig != window.hero.shipconfig) {
 				api.changeConfig();
 				return;
@@ -613,8 +614,8 @@ function logic() {
 				let cx = enemy.x;
 				let cy = enemy.y;
 				if(api.lockedShip.percentOfHp < 25 || dist > 700){
-					cx = api.targetShip.target.x + (cx-api.targetShip.target.x);
-					cy = api.targetShip.target.y + (cy-api.targetShip.target.y);
+					cx = api.targetShip.target.x;
+					cy = api.targetShip.target.y;
 				}
 				let f = Math.atan2(window.hero.position.x - cx, window.hero.position.y - cy) + 0.5;
 				let s = Math.PI / 180;
