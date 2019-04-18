@@ -1,103 +1,115 @@
 class Variables {
 	static get assetCreateX() {
-		return "_-I4A";
+		return "_-21t";
 	}
 	
 	static get assetCreateY() {
-		return "_-9S";
+		return "_-r2X";
 	}
 	
 	static get boxType() {
-		return "_-6m";
+		return "_-41Z";
 	}
 	
 	static get gateId() {
-		return "_-zU";
+		return "_-u4x";
 	}
 	
 	static get gateType() {
-		return "_-Z4e";
+		return "_-P3W";
 	}
 	
 	static get attackerId() {
-		return "_-H1q";
+		return "_-F39";
 	}
 	
 	static get heroAttackedId() {
-		return "_-aa";
+		return "_-X3";
 	}
 	
 	static get attackHp() {
-		return "_-B2d";
+		return "_-PN";
 	}
 	
 	static get attackShd() {
-		return "_-v3x";
+		return "_-Vx";
 	}
 	
 	static get heroInitMaxHp() {
-		return "_-V3Y";
+		return "_-r2p";
 	}
 	
 	static get heroInitMaxShd() {
-		return "_-D4G";
+		return "_-m3j";
 	}
 	
 	static get heroInitHp() {
-		return "_-o1k";
+		return "_-h1B";
 	}
 	
 	static get heroPetId() {
-		return "_-f5";
+		return "_-a3u";
 	}
 	
 	static get hpUpdateMaxHp() {
-		return "_-J2A";
+		return "_-45A";
 	}
 	
 	static get hpUpdateHp() {
-		return "_-y1o";
+		return "_-S1F";
 	}
 	
 	static get heroUpdateShd() {
-		return "_-l1B";
+		return "_-F4K";
 	}
 	
 	static get resource() {
-		return "_-E3W";
+		return "_-Y2p";
+	}
+	
+	static get attackerId() {
+		return "_-F39";
+	}
+	
+	static get attackedId() {
+		return "_-k3C";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-uS";
+		return "_-g38";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-B15";
+		return "_-y5";
+	}
+	
+	static get moveDuration() {
+		return "_-dE";
 	}
 	
 	static get selectMaxHp() {
-		return "_-J2A";
+		return "_-45A";
 	}
 	
 	static get selectMaxShd() {
-		return "_-D4G";
+		return "_-m3j";
 	}
 	
 	static get selectHp() {
-		return "_-y1o";
-	}
-
-	static get moveDuration() {
-		return "_-T4N";
+		return "_-S1F";
 	}
 		
-	
-	static get resourceType() {
-		return "_-9A";
+	static get battlestationClanDiplomacy() {
+		return "_-qr"; 
 	}
 
-	static get battlestationClanDiplomacy() {
-		return "_-049"; 
+    static get attackedId() {
+        return "_-k3C";
+	}
+	
+	static get resourceType(){
+		return "_-LD";
 	}
 	
 }
+

@@ -677,7 +677,7 @@ class Api {
 		portals13.push(new Portal(150000165,7)); // 1-3 | 1-2
 		this.starSystem.push(new Map(3, portals13));
 		let portals14 = [];
-		portals14.push(new Portal(150000164,2));  // 1-4 | 1-2 
+		portals14.push(new Portal(150000164,2));  // 1-4 | 1-2
 		portals14.push(new Portal(150000186,3));  // 1-4 | 1-3
 		portals14.push(new Portal(150000189,13)); // 1-4 | 4-1
 		portals14.push(new Portal(150000169,12)); // 1-4 | 3-4
@@ -739,71 +739,71 @@ class Api {
 		portals42.push(new Portal(150000291,16)); //4-2 | 4-4
 		this.starSystem.push(new Map(14, portals42));
 		let portals44 = [];
-		portals44.push(new Portal(150000318,25)); //4-4 | 3-5
-		portals44.push(new Portal(150000294,15)); //4-4 | 4-3
-		portals44.push(new Portal(150000292,14)); //4-4 | 4-2
-		portals44.push(new Portal(150000308,21)); //4-4 | 2-5
-		portals44.push(new Portal(150000298,17)); //4-4 | 1-5
-		portals44.push(new Portal(150000290,13)); //4-4 | 4-1
+		portals44.push(new Portal(150000328,25)); //4-4 | 3-5
+		portals44.push(new Portal(150000304,15)); //4-4 | 4-3
+		portals44.push(new Portal(150000302,14)); //4-4 | 4-2
+		portals44.push(new Portal(150000318,21)); //4-4 | 2-5
+		portals44.push(new Portal(150000208,17)); //4-4 | 1-5
+		portals44.push(new Portal(150000200,13)); //4-4 | 4-1
 		this.starSystem.push(new Map(16, portals44));
 		let portals45 = [];
-		portals45.push(new Portal(150000329,17)); //4-5 | 1-5
-		portals45.push(new Portal(150000331,21)); //4-5 | 2-5
-		portals45.push(new Portal(150000333,25)); //4-5 | 3-5
+		portals45.push(new Portal(150000339,17)); //4-5 | 1-5
+		portals45.push(new Portal(150000341,21)); //4-5 | 2-5
+		portals45.push(new Portal(150000343,25)); //4-5 | 3-5
 		this.starSystem.push(new Map(29, portals45));
 		let portals15 = [];
-		portals15.push(new Portal(150000299,16)); //1-5 | 4-4
-		portals15.push(new Portal(150000328,29)); //1-5 | 4-5
-		portals15.push(new Portal(150000300,18)); //1-5 | 1-6
-		portals15.push(new Portal(150000302,19)); //1-5 | 1-7
+		portals15.push(new Portal(150000309,16)); //1-5 | 4-4
+		portals15.push(new Portal(150000338,29)); //1-5 | 4-5
+		portals15.push(new Portal(150000310,18)); //1-5 | 1-6
+		portals15.push(new Portal(150000312,19)); //1-5 | 1-7
 		this.starSystem.push(new Map(17, portals15));
 		let portals16 = [];
-		portals16.push(new Portal(150000301,17)); //1-6 | 1-5
-		portals16.push(new Portal(150000304,20)); //1-6 | 1-8
+		portals16.push(new Portal(150000311,17)); //1-6 | 1-5
+		portals16.push(new Portal(150000314,20)); //1-6 | 1-8
 		this.starSystem.push(new Map(18, portals16));
 		let portals17 = [];
-		portals17.push(new Portal(150000306,20)); //1-7 | 1-8
-		portals17.push(new Portal(150000303,17)); //1-7 | 1-5
+		portals17.push(new Portal(150000316,20)); //1-7 | 1-8
+		portals17.push(new Portal(150000313,17)); //1-7 | 1-5
 		this.starSystem.push(new Map(19, portals17));
 		let portals18 = [];
-		portals18.push(new Portal(150000305,18)); //1-8 | 1-6
-		portals18.push(new Portal(150000307,19)); //1-8 | 1-7
+		portals18.push(new Portal(150000315,18)); //1-8 | 1-6
+		portals18.push(new Portal(150000317,19)); //1-8 | 1-7
 		this.starSystem.push(new Map(20, portals18));
 		let portals25 = [];
-		portals25.push(new Portal(150000330,16)); //2-5 | 4-4
-		portals25.push(new Portal(150000309,29)); //2-5 | 4-5
-		portals25.push(new Portal(150000310,22)); //2-5 | 2-6
-		portals25.push(new Portal(150000312,23)); //2-5 | 2-7
+		portals25.push(new Portal(150000340,16)); //2-5 | 4-4
+		portals25.push(new Portal(150000319,29)); //2-5 | 4-5
+		portals25.push(new Portal(150000320,22)); //2-5 | 2-6
+		portals25.push(new Portal(150000322,23)); //2-5 | 2-7
 		this.starSystem.push(new Map(21, portals25));
 		let portals26 = [];
-		portals26.push(new Portal(150000311,21)); //2-6 | 2-5
-		portals26.push(new Portal(150000314,24)); //2-6 | 2-8
+		portals26.push(new Portal(150000321,21)); //2-6 | 2-5
+		portals26.push(new Portal(150000324,24)); //2-6 | 2-8
 		this.starSystem.push(new Map(22, portals26));
 		let portals27 = [];
-		portals27.push(new Portal(150000313,21)); //2-7 | 2-5
-		portals27.push(new Portal(150000316,24)); //2-7 | 2-8
+		portals27.push(new Portal(150000323,21)); //2-7 | 2-5
+		portals27.push(new Portal(150000326,24)); //2-7 | 2-8
 		this.starSystem.push(new Map(23, portals27));
 		let portals28 = [];
-		portals28.push(new Portal(150000315,22)); //2-8 | 2-6
-		portals28.push(new Portal(150000317,23)); //2-8 | 2-7
+		portals28.push(new Portal(150000325,22)); //2-8 | 2-6
+		portals28.push(new Portal(150000327,23)); //2-8 | 2-7
 		this.starSystem.push(new Map(24, portals28));
 		let portals35 = [];
-		portals35.push(new Portal(150000319,16)); //3-5 | 4-4
-		portals35.push(new Portal(150000332,29)); //3-5 | 4-5
-		portals35.push(new Portal(150000320,26)); //3-5 | 3-6
-		portals35.push(new Portal(150000322,27)); //3-5 | 3-7
+		portals35.push(new Portal(150000329,16)); //3-5 | 4-4
+		portals35.push(new Portal(150000342,29)); //3-5 | 4-5
+		portals35.push(new Portal(150000330,26)); //3-5 | 3-6
+		portals35.push(new Portal(150000332,27)); //3-5 | 3-7
 		this.starSystem.push(new Map(25, portals35));
 		let portals36 = [];
-		portals36.push(new Portal(150000321,25)); //3-6 | 3-5
-		portals36.push(new Portal(150000324,28)); //3-6 | 3-8
+		portals36.push(new Portal(150000331,25)); //3-6 | 3-5
+		portals36.push(new Portal(150000334,28)); //3-6 | 3-8
 		this.starSystem.push(new Map(26, portals36));
 		let portals37 = [];
-		portals37.push(new Portal(150000323,25)); //3-7 | 3-5
-		portals37.push(new Portal(150000326,28)); //3-7 | 3-8
+		portals37.push(new Portal(150000333,25)); //3-7 | 3-5
+		portals37.push(new Portal(150000336,28)); //3-7 | 3-8
 		this.starSystem.push(new Map(27, portals37));
 		let portals38 = [];
-		portals38.push(new Portal(150000327,27)); //3-8 | 3-7
-		portals38.push(new Portal(150000325,26)); //3-8 | 3-6
+		portals38.push(new Portal(150000337,27)); //3-8 | 3-7
+		portals38.push(new Portal(150000335,26)); //3-8 | 3-6
 		this.starSystem.push(new Map(28, portals38));
 	}
 

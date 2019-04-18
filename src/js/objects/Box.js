@@ -51,7 +51,7 @@ class Box extends Movable {
 
 	isCollectable() {
 		let type = this.type;
-		return (type == "BONUS_BOX" || type == "MINI_PUMPKIN" || type == "TURKISH_FLAG" || type == "GIFT_BOXES" || type == "ICY_BOX" || type == "YURIS_BONUS_BOX" || type == "ID_MEXICO" || type == "USA_FLAG" || type == "MAYHEM_BOX" || type == "DEMANER_BOX" || type == "DEMANER_INVADER_BOX" || type == "DEMON_BOX");
+		return (type == "BEACON_MED_RISK_BOX_1" || type == "BEACON_MED_RISK_BOX_2" ||type == "BEACON_MED_RISK_BOX_3" || type == "BEACON_MED_RISK_BOX_4" ||type == "BONUS_BOX" || type == "MINI_PUMPKIN" || type == "TURKISH_FLAG" || type == "GIFT_BOXES" || type == "ICY_BOX" || type == "YURIS_BONUS_BOX" || type == "ID_MEXICO" || type == "USA_FLAG" || type == "MAYHEM_BOX" || type == "DEMANER_BOX" || type == "DEMANER_INVADER_BOX" || type == "DEMON_BOX");
 	}
 
 	isMaterial() {
