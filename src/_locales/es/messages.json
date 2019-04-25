@@ -60,7 +60,7 @@
     "message": "Activar función Refresh"
   },
   "refreshtime": {
-    "message": "Recargar la pagina cada (min)"
+    "message": "Recargar la pagina cada (min): "
   },
   "clearsettings": {
     "message": "Limpiar configuraciones (Función Refresh)"
@@ -141,13 +141,13 @@
     "message": "Girar en Círculos"
   },
   "circleradius": {
-    "message": "Radio del Círculo <span> (500px)</span>"
+    "message": "Radio del Círculo <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "No girar cuando el HP sea menor de 25%"
   },
   "repairwhenhp": {
-    "message": "Repara cuando el HP sea menor de <span> (30%)</span>"
+    "message": "Repara cuando el HP sea menor de <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Saltar portal y Regresar"

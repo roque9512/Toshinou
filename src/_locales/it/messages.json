@@ -59,7 +59,7 @@
     "message": "Abilita aggiornamento della pagina"
   },
   "refreshtime": {
-    "message": "Intervallo per aggiornare la pagina (min)"
+    "message": "Intervallo per aggiornare la pagina (min): "
   },
   "clearsettings": {
     "message": "Azzera impostazioni salvate (aggiornamento pagina)"
@@ -83,7 +83,7 @@
     "message": "numero rianimazioni: "
   },
   "workmap": {
-    "message": "Mappa su cui usare il bot"
+    "message": "Mappa su cui usare il bot: "
   },
   "any": {
     "message": "Qualsiasi"
@@ -140,13 +140,13 @@
     "message": "Circola attorno"
   },
   "circleradius": {
-    "message": "Raggio cerchio <span> (500px)</span>"
+    "message": "Raggio cerchio <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Non circolare quando PV < 25%"
   },
   "repairwhenhp": {
-    "message": "Ripara quando pv < <span> (30%)</span>"
+    "message": "Ripara quando pv < <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Salta e Ritorna"

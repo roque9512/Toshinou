@@ -141,13 +141,13 @@
     "message": "Крутить"
   },
   "circleradius": {
-    "message": "Радиус кручения <span> (500px)</span>"
+    "message": "Радиус кручения <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Не крутить при прочности < 25%"
   },
   "repairwhenhp": {
-    "message": "Восстонавливать прочность при < <span> (30%)</span>"
+    "message": "Восстонавливать прочность при < <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Прыжок и возврат"

@@ -18,6 +18,7 @@ class Api {
 		this.starSystem = [];
 		this.workmap = null;
 		this.jumped = false;
+		this.isRepairing = false;
 		this.changeConfigTime = $.now();
 		this.changeFormationTime = $.now();
 		this.lastAutoLock = $.now();
@@ -30,12 +31,16 @@ class Api {
 		this.moduleCooldown = -1;
 		this.petHasFuel = true;
 		// QuickSlot stuff
-		this.abilityCoolDown = 1;
+		this.abilityReady = true;
+		this.abilityDelay = $.now();
 		this.formation = -1;
 		this.pauseTime = null;
 		this.pauseStop = null;
 		// sleep
 		this.sleepTime = 0;
+
+		this.enemyLastSight = 0;
+
 	}
 
 	sleeping(){
@@ -59,7 +64,7 @@ class Api {
 		// 0 = activate
 		// 1 = deactivate
 		// 4 = repair
-		api.petActivateTimer = $.now();
+		this.petActivateTimer = $.now();
 		Injector.injectScript('document.getElementById("preloader").petCall('+parseInt(n)+');');
 		this.currentModule = -1;
 	}
@@ -69,31 +74,32 @@ class Api {
 		this.pauseTime = $.now();
 		this.pauseStop = t;
 	}
+	
 	combatMode(){
 		if (window.settings.settings.autoChangeConfig && window.settings.settings.attackConfig != window.hero.shipconfig){
-			api.changeConfig();
+			this.changeConfig();
 		}
-		if (window.settings.settings.changeFormation && !api.isRepairing){
-			if (window.settings.settings.attackFormation != api.formation) {
-				api.changeFormation(window.settings.settings.attackFormation);
+		if (window.settings.settings.changeFormation && !this.isRepairing){
+			if (window.settings.settings.attackFormation != this.formation) {
+				this.changeFormation(window.settings.settings.attackFormation);
 			}
 		}
 	}
 
 	flyingMode(){
 		if (window.settings.settings.autoChangeConfig && window.settings.settings.flyingConfig != window.hero.shipconfig) {
-			api.changeConfig();
+			this.changeConfig();
 		}
-		if (window.settings.settings.changeFormation && api.formation != window.settings.settings.flyingFormation) {
-			api.changeFormation(window.settings.settings.flyingFormation);
+		if (window.settings.settings.changeFormation && this.formation != window.settings.settings.flyingFormation) {
+			this.changeFormation(window.settings.settings.flyingFormation);
 		}
 	}
 
 	useAbility(){
-		var cooldownlist = {"cyborg":310000,"solace":140000,"diminisher":161000,"venom":180000,"sentinel":215000,"spectrum":195000,"v-lightning":185000};
-		if(this.abilityCoolDown && $.now() - this.abilityCoolDown > cooldownlist[window.hero.skillName]){
+		// Delay to avoid key press spam
+		if(this.abilityReady && $.now() - this.abilityDelay > 2000){
 			this.quickSlot(window.settings.settings.abilitySlot);
-			this.abilityCoolDown = $.now();
+			this.abilityDelay = $.now();
 			return true;
 		}
 		return false;
@@ -137,9 +143,13 @@ class Api {
 
 	blackListId(id) {
 		this._blackListedNpcs.push(id);
-		setTimeout(() => {
-			this._blackListedNpcs.shift();
-		}, 120000);
+	}
+
+	whitelistId(id){
+		if(this.isShipOnBlacklist(id)){
+			var index = this._blackListedNpcs.indexOf(id);
+			this._blackListedNpcs.splice(index, 1);
+		}
 	}
 
 	lockShip(ship) {
@@ -317,15 +327,15 @@ class Api {
 		let shipsCount = Object.keys(this.ships).length;
 		for (let property in this.ships) {
 			let ship = this.ships[property];
-			if (ship && (ship.name == "-=[ Devourer ]=- ζ25" || ship.name == "-=[ Devourer ]=- ζ27")) {
-				window.settings.settings.resetTargetWhenHpBelow25Percent=false;
+			if (ship && ship.name.indexOf("Devourer") != -1) {
+				window.settings.settings.resetTargetWhenHpBelow25Percent = false;
 				if (shipsCount > 1) {
-					window.settings.setNpc(ship.name, true);
+					this.blackListId(ship.id);
 					if (this.targetShip == ship) {
 						this.resetTarget("enemy");
 					}
 				} else {
-					window.settings.setNpc(ship.name, false);
+					this.whitelistId(ship.id);
 					this.targetShip = ship;
 				}
 			}
@@ -398,6 +408,7 @@ class Api {
 			let dist = box.distanceTo(window.hero.position);
 			if (dist < minDist) {
 				if (!box.isResource() && ((box.isCollectable() && window.settings.settings.bonusBox) ||
+					(box.isEvent() && window.settings.settings.eventBox) || 
 					((box.isMaterial() || box.isDropRes()) && window.settings.settings.materials) ||
 					(box.isPalladium() && window.settings.settings.palladium) ||
 					(box.isCargoBox() && window.settings.settings.cargoBox) ||
@@ -420,6 +431,7 @@ class Api {
 	findNearestShip() {
 		let minDist = window.settings.settings.palladium ? window.settings.settings.npcCircleRadius : 100000;
 		let finalShip;
+		let highestPriority = -1;
 
 		if (!window.settings.settings.killNpcs) {
 			return {
@@ -431,22 +443,41 @@ class Api {
 		for (let property in this.ships) {
 			let ship = this.ships[property];
 			ship.update();
-			let dist = ship.distanceTo(window.hero.position);
 
-			if (dist < minDist) {
-				if (ship.isNpc && window.settings.getNpc(ship.name) && !this.isShipOnBlacklist(ship.id) && !ship.isAttacked) {
-					if(ship.firstAttacker == null || (ship.firstAttacker != null && ship.firstAttacker == window.hero.id)){
+			let dist = ship.distanceTo(window.hero.position);
+			let priority = window.settings.getNpc(ship.name).priority;
+
+			if (ship.isNpc && !window.settings.getNpc(ship.name).blocked && !this.isShipOnBlacklist(ship.id) && !ship.isAttacked) {
+				if((ship.firstAttacker == null || (ship.firstAttacker != null && ship.firstAttacker == window.hero.id) ||
+					!window.settings.settings.avoidAttackedNpcs)) {
+					if(priority > highestPriority){	
 						finalShip = ship;
 						minDist = dist;
+						highestPriority = priority;
+					}else if(priority == highestPriority && minDist > dist){
+						finalShip = ship;
+						minDist = dist;
+						highestPriority = priority;
 					}
 				}
 			}
 		}
 
 		return {
-		ship: finalShip,
-		distance: minDist
+			ship: finalShip,
+			distance: minDist
 		};
+	}
+
+	findEnemy(){
+		for (let property in this.ships) {
+			let ship = this.ships[property];
+
+			if(ship.isEnemy && !ship.isNpc){
+				return ship;
+			}
+		}
+		return null;
 	}
 
 	findNearestGate() {
@@ -469,12 +500,13 @@ class Api {
 		};
 	}
 	
-	  	  findNearestGateForRunAway(enemy) {
+	findNearestGateForRunAway(enemy) {
 		let minDist = 100000;
 		let finalGate;
 		let bestGate = 0;
 		let bestDist = 0;
-		this.gates.forEach(gate => {
+		for(var g = 0; g < this.gates.length; g++){
+			let gate = this.gates[g];
 			// Avoid pvp gates if Jump and Return is enabled
 			// 1-5->4-4 | 3-5->4-4 | 2-5->4-4 | 1-4->4-1 | 2-4->4-2 | 3-4->4-3 | x-8->x-BL respectively
 			let pvpgates = [150000299, 150000319,150000330, 150000191, 150000192, 150000193, 150000209, 150000205, 150000201];
@@ -482,6 +514,11 @@ class Api {
 				let enemeyDistance = enemy.distanceTo(gate.position);
 				let dist = window.hero.distanceTo(gate.position);
 
+				if(dist < 1000){
+					finalGate = gate;
+					minDist = dist;
+					break;
+				}
 				if (enemeyDistance < dist) {
 					bestGate = gate;
 					bestDist = dist;
@@ -492,7 +529,7 @@ class Api {
 					}
 				}
 			}
-		});
+		}
 
 		// If no good gate found, just run away to the closest
 		if(finalGate == null){
@@ -506,10 +543,14 @@ class Api {
 		};
 	}
 
+
 	fleeFromEnemy(enemy) {
 		let gate = this.findNearestGateForRunAway(enemy);
 		if(gate.gate){
 			let dist = window.hero.distanceTo(gate.gate.position);
+			if(!window.fleeingFromEnemy && dist < 500){
+				window.stayInPortal = true;
+			}
             if (window.settings.settings.useAbility && dist > 350 &&
                 (window.hero.skillName == "spectrum" ||
                     window.hero.skillName == "sentinel" ||
@@ -520,8 +561,8 @@ class Api {
                 // Excludes shield factor if there's no shield on the configuration
                 if (isNaN(shdPercent))
                     shdPercent = 100;
-                if (Math.min(hpPercent, shdPercent) < window.settings.settings.repairWhenHpIsLowerThanPercent)
-                    api.useAbility();
+                if (Math.min(hpPercent, shdPercent) < window.settings.settings.repairStartPercent)
+					this.useAbility();
             }
 			if(window.settings.settings.jumpFromEnemy && !window.stayInPortal){
 				if (this.jumpAndGoBack(gate.gate.gateId)) {

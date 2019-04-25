@@ -184,7 +184,7 @@ class StatisticWindow {
       hour: ((uri / timeMinutes) * 60).toFixed(2),
     };
 
-    let result = uri > 0 & timeMinutes > 0 ? formats[curFormat] : '0.00';
+    let result = uri > 0 && timeMinutes > 0 ? formats[curFormat] : '0.00';
     result += `  uri/${curFormat}`;
 
     return result;

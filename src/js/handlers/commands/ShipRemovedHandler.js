@@ -13,8 +13,16 @@ class ShipRemovedHandler {
 
 			let ship = a.ships[id];
 
-			if (ship != null)
+			if (ship != null){
 				delete a.ships[id];
+				if(a.isShipOnBlacklist(id)){
+					var index = a._blackListedNpcs.indexOf(id);
+					a._blackListedNpcs.splice(index, 1);
+				}
+				if(window.enemy && id == window.enemy.id){
+					a.enemyLastSight = $.now();
+				}
+			}
 		}
 	}
 

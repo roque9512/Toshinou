@@ -60,7 +60,7 @@
     "message": "Włącz funkcje odświerzania"
   },
   "refreshtime": {
-    "message": "Odśwież strone co (min)"
+    "message": "Odśwież strone co (min): "
   },
   "clearsettings": {
     "message": "Wyczyść ustawienia (Ośwież strone ustawienia Funkcji)"
@@ -84,7 +84,7 @@
     "message": "Limit naprawień: "
   },
   "workmap": {
-    "message": "Mapa"
+    "message": "Mapa: "
   },
   "any": {
     "message": "Any"
@@ -141,13 +141,13 @@
     "message": "Orbitkuj"
   },
   "circleradius": {
-    "message": "Orbitkowanie <span> (500px)</span>"
+    "message": "Orbitkowanie <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Nie Orbitkuj gdy HP NPC jest mniej niż < 25%"
   },
   "repairwhenhp": {
-    "message": "Napraw gdy Twoje HP spadnie poniżej< <span> (30%)</span>"
+    "message": "Napraw gdy Twoje HP spadnie poniżej< <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Skocz i wróć"

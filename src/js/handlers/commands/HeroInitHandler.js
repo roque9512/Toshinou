@@ -13,7 +13,8 @@ class HeroInitHandler {
 			a.resetTarget("all");
 			a.battlestation = null;
 			Injector.injectScript("window.heroDied = false;");
-
+			window.enemy = null;
+			
 			let heroJson = JSON.parse(e.detail);
 
 			// this handler is called after you have jumped to another map

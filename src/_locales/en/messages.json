@@ -60,7 +60,7 @@
     "message": "Enable refresh function"
   },
   "refreshtime": {
-    "message": "Refresh interval (min)"
+    "message": "Refresh interval (min): "
   },
   "reviveat": {
     "message": "Revive at: "
@@ -78,10 +78,10 @@
     "message": "No revive"
   },
   "revivelimit": {
-    "message": "Revive limit: : "
+    "message": "Revive limit: "
   },
   "workmap": {
-    "message": "Work Map"
+    "message": "Work Map: "
   },
   "any": {
     "message": "Any"
@@ -138,13 +138,13 @@
     "message": "Circle"
   },
   "circleradius": {
-    "message": "Circle radius <span> (500px)</span>"
+    "message": "Circle radius <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Don't circle when HP < 25%"
   },
   "repairwhenhp": {
-    "message": "Repair when HP <span> (30%)</span>"
+    "message": "Repair when HP <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Jump And Return"

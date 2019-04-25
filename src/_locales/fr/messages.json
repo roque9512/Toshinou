@@ -60,7 +60,7 @@
     "message": "Activer la fonction de rafraîchissement"
   },
   "refreshtime": {
-    "message": "Intervalle de rafraîchissement (min)"
+    "message": "Intervalle de rafraîchissement (min): "
   },
   "clearsettings": {
     "message": "Effacer les paramètres de stockage (fonction de rafraîchissement)"
@@ -84,7 +84,7 @@
     "message": "Limite de réapparition: "
   },
   "workmap": {
-    "message": "Map active"
+    "message": "Map active: "
   },
   "any": {
     "message": "Toutes"
@@ -141,13 +141,13 @@
     "message": "Cercle"
   },
   "circleradius": {
-    "message": "Rayon du cercle <span> (500px)</span>"
+    "message": "Rayon du cercle <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Ne pas faire de cercle quand HP < 25%"
   },
   "repairwhenhp": {
-    "message": "Réparer quand HP < <span> (30%)</span>"
+    "message": "Réparer quand HP < <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Sauter et revenir"

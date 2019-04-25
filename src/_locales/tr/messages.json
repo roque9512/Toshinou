@@ -141,13 +141,13 @@
     "message": "Daire"
   },
   "circleradius": {
-    "message": "Daire yaricapi<span> (500px)</span>"
+    "message": "Daire yaricapi<span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Can < 25% olunca daire cizme"
   },
   "repairwhenhp": {
-    "message": "Can < <span> (30%)</span> olunca tamir ol"
+    "message": "Can < <span> ($$$%)</span> olunca tamir ol"
   },
   "jumpandreturn": {
     "message": "Atla ve Geri Don"

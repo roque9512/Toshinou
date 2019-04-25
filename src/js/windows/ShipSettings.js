@@ -9,7 +9,11 @@ class ShipSettings{
         {
             name: 'autoChangeConfig',
             labelText: chrome.i18n.getMessage('autochangeconfig'),
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
+            attrs:{
+                checked: window.settings.settings.autoChangeConfig
+            },
             event: function () {
                 $(".configs").prop("disabled", !this.checked );
                 window.settings.settings.autoChangeConfig = this.checked;
@@ -18,7 +22,11 @@ class ShipSettings{
         {
             name: 'changeFormation',
             labelText: chrome.i18n.getMessage('changedroneformation'),
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
+            attrs:{
+                checked: window.settings.settings.changeFormation
+            },
             event: function () {
                 $(".formations").prop("disabled", !this.checked);
                 window.settings.settings.changeFormation = this.checked;
@@ -27,6 +35,7 @@ class ShipSettings{
         {
             name: 'changeMode',
             labelText: "Change to flying mode when looking for npcs/boxes",
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
             attrs: {
                 checked : window.settings.settings.changeMode
@@ -38,7 +47,11 @@ class ShipSettings{
         {
             name: 'useAbility',
             labelText: chrome.i18n.getMessage('useability'),
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
+            attrs:{
+                checked: window.settings.settings.useAbility
+            },
             event: function () {
                 $(".ability").prop("disabled", !this.checked);
                 window.settings.settings.useAbility = this.checked;
@@ -47,7 +60,11 @@ class ShipSettings{
         {
             name: 'autoCamouflage',
             labelText: "Auto camo",
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
+            attrs:{
+                checked: window.settings.settings.autoCamo
+            },
             event: function () {
                 $(".camo").prop("disabled", !this.checked );
                 window.settings.settings.autoCamo = this.checked;
@@ -75,7 +92,8 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {"1":1, "2":2},
             attrs:{
-                class: "configs"
+                class: "configs",
+                value:window.settings.settings.flyingConfig
             },
             event: function () {
                 window.settings.settings.flyingConfig = this.value;
@@ -89,7 +107,8 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
             attrs:{
-                class: "formations"
+                class: "formations",
+                value: window.settings.settings.attackFormation
             },
             event: function () {
                 window.settings.settings.attackFormation = this.value;
@@ -103,7 +122,8 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
             attrs:{
-                class: "formations "
+                class: "formations",
+                value: window.settings.settings.flyingFormation
             },
             event: function () {
                 window.settings.settings.flyingFormation = this.value;
@@ -117,7 +137,8 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
             attrs:{
-                class: "ability"
+                class: "ability",
+                value: window.settings.settings.abilitySlot
             },
             event: function () {
                 window.settings.settings.abilitySlot = this.value;
@@ -131,7 +152,8 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
             attrs:{
-                class: "camo"
+                class: "camo",
+                value: window.settings.settings.autoCamo
             },
             event: function () {
                 window.settings.settings.camouflageSlot = this.value;
@@ -144,6 +166,7 @@ class ShipSettings{
             appendTo: this.shipSettingsWindow,
             options: {0:chrome.i18n.getMessage('base'), 1:chrome.i18n.getMessage('gate'), 2:chrome.i18n.getMessage('spot')},
             attrs:{
+                value: window.settings.settings.reviveType
             },
             event: function () {
                 window.settings.settings.reviveType = this.value;
@@ -169,8 +192,11 @@ class ShipSettings{
         {
             name: 'enablePet',
             labelText: chrome.i18n.getMessage('enablepet'),
+            type: 'checkbox',
             appendTo: this.shipSettingsWindow,
-            attrs:{},
+            attrs:{
+                checked: window.settings.settings.enablePet
+            },
             event: function () {
                 window.settings.settings.enablePet = this.checked;
                 $(".petstuff").prop("disabled", !this.checked);
@@ -185,7 +211,8 @@ class ShipSettings{
             labelBefore: true,
             options: {2:"Guard Mode", 10:"Kamikaze", 4:"Auto loot", 5:"Collect Resource"}, // , 6:"Enemy locator"
             attrs:{
-                class: "petstuff"
+                class: "petstuff",
+                value: window.settings.settings.petModule
             },
             event: function() {
                 window.settings.settings.petModule = this.value;

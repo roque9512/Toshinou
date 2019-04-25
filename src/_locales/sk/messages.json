@@ -60,7 +60,7 @@
     "message": "Povoliť funkciu obnovovania"
   },
   "refreshtime": {
-    "message": "Interval obnovovania (min)"
+    "message": "Interval obnovovania (min): "
   },
   "clearsettings": {
     "message": "Obnovoviť pamäť nastavení (Obnoviť nastavenia)"
@@ -141,13 +141,13 @@
     "message": "Krúžiť"
   },
   "circleradius": {
-    "message": "Radius Krúženia <span> (500px)</span>"
+    "message": "Radius Krúženia <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Nekrúžiť keď npc má HP < 25%"
   },
   "repairwhenhp": {
-    "message": "Opravovať keď < <span> (30%)</span>"
+    "message": "Opravovať keď < <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Skok a návrat"

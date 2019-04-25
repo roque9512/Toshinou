@@ -1,5 +1,4 @@
 class ControlFactory {
-
 	static info({
 		labelText,
 		spanText,
@@ -15,7 +14,6 @@ class ControlFactory {
 		span.appendTo(info);
 
 		info.appendTo(appendTo);
-
 		return info;
 	}
 
@@ -31,99 +29,79 @@ class ControlFactory {
 		options = {}
 	}) {
 
-	let select = jQuery("<select>");
-	select.attr('id', name);
-	Object.keys(attrs).forEach((name) => {
-		select.attr(name, attrs[name]);
-	});
+		let select = jQuery("<select>");
+		Object.keys(options).forEach((key) =>{
+			let localOption = jQuery("<option>");
+			localOption.attr('value', key);
+			localOption.text(options[key]);
+			localOption.appendTo(select);
+		});
+		Object.keys(attrs).forEach((name) => {
+			if(name == "value")
+				select.val(attrs[name]);
+			else
+				select.attr(name, attrs[name]);
+			
+		});
+		let label = jQuery("<label>");
+		label.html(labelText);
+		label.appendTo(appendTo);
 
-	Object.keys(options).forEach((key) =>{
-		let localOption = jQuery("<option>");
-		localOption.attr('value', key);
-		localOption.text(options[key]);
-		localOption.appendTo(select);
-	});
-	if(window.settings.settings[name] != null){
-		select.val(window.settings.settings[name]);
-	}
-	let label = jQuery("<label>");
-	label.html(labelText);
-	label.appendTo(appendTo);
-
-
-	select.appendTo(appendTo);
-	if (br) {
-		jQuery("<br>").appendTo(appendTo);
-	}
-
-
-	select[eventType](function (ev) {
-		this.select = select;
-		if (labelText) {
-		this.label = label;
+		select.appendTo(appendTo);
+		if (br) {
+			jQuery("<br>").appendTo(appendTo);
 		}
-		event.call(this, ev);
-	});
-	select.prop("disabled", disabled );
-    
 
-	return {
-		select,
-		label
-	};
+		select[eventType](function (ev) {
+			this.select = select;
+			if (labelText) {
+			this.label = label;
+			}
+			event.call(this, ev);
+		});
+		select.prop("disabled", disabled );
+
+		return {
+			select,
+			label
+		};
 
 	}
 
-	static checkbox({
+	static label({
 		labelText,
+		name,
 		appendTo,
+		br = true,
+		attrs = {}
+	}){
+		let something = jQuery("<label>");
+		something.attr(attrs);
+		something.attr("for", name);
+		something.html(labelText);
+		something.appendTo(appendTo);
+	}
+
+	static input({
+		labelText = "",
+		type,
+		appendTo,
+		name,
 		eventType = "change",
+		br = true,
+		labelBefore = false,
 		event = () => {},
 		attrs = {}
 	}) {
-		return this.createControl({
-			labelText,
-			appendTo,
-			eventType,
-			event,
-			attrs
-		});
-	}
-
-	static createControl({
-		type = "checkbox",
-		name,
-		labelText,
-		labelBefore = false,
-		appendTo,
-		br = true,
-		eventType = "change",
-		event = () => {},
-		attrs = {},
-	}) {
 		let input = jQuery("<input>");
 		input.attr("type", type);
-		input.attr("id", name);
-
 
 		Object.keys(attrs).forEach((attname) => {
 			input.attr(attname, attrs[attname]);
 		});
-
-		if(type == "checkbox"){
-			if(window.settings.settings[name] != null){
-				input.prop('checked',window.settings.settings[name]);
-			}else if(window.settings.settings.npcs[labelText]){
-				input.prop('checked', true);
-			}
-		}else if(type == "range" || type == "number"){
-			input.attr('value',window.settings.settings[name]);
-			if(labelText.indexOf('<span>') != -1)
-				labelText = labelText.replace(/[0-9]{1,3}/, window.settings.settings[name]);
-		}
-
 		let label = jQuery("<label>");
 		label.attr("for", name);
+		input.attr("id", name);
 		label.html(labelText);
 
 		if (labelBefore) 
@@ -143,16 +121,61 @@ class ControlFactory {
 			event.call(this, ev);
 		});
 
-
 		return {
 			input,
 			label
 		};
 	}
 
+	static createControl(params) {
+		switch(params.type){
+			case "checkbox":
+			case "range":
+			case "number":
+				return this.input(params);
+			case "label":
+				return this.label(params)
+			case "select":
+				return this.select(params);
+			default:
+				break;
+		}
+	}
+
+
+	static createTable(columns){
+		let table = jQuery('<table>');
+		table.attr("border", 1);
+		let body = jQuery('<tbody>');
+		body.appendTo(table);
+
+		let top = jQuery('<tr>');
+		columns.forEach((n, i) => {
+			let th = jQuery("<th>");
+			th.html(n);
+			th.appendTo(top);
+		});
+		top.appendTo(body);
+		return table;
+	}
+
+
+	static tableFill(table, rows){
+		let _row = jQuery("<tr>")
+		rows.forEach((n, i) => {
+			let td = jQuery("<td>");
+			n['appendTo'] = td;
+			this.createControl(n);
+			td.appendTo(_row);
+		});
+		_row.appendTo(table);
+	}
+
+
 	static emptyDiv(appendTo) {
 		return jQuery("<div>").appendTo(appendTo);
 	}
+
 
 	static btn({
 		labelText,

@@ -84,7 +84,7 @@
     "message": "Όριο αναζωογονισης: "
   },
   "workmap": {
-    "message": "Χάρτης δουλείας"
+    "message": "Χάρτης δουλείας: "
   },
   "any": {
     "message": "Όποιο να ναι"
@@ -141,13 +141,13 @@
     "message": "Κάνε κύκλο"
   },
   "circleradius": {
-    "message": "Ακτίνα κίνησης κύκλου <span> (500px)</span>"
+    "message": "Ακτίνα κίνησης κύκλου <span> ($$$px)</span>"
   },
   "dontcirclewhenhp": {
     "message": "Σταμάτα τον κύκλο όταν οι πόντοι ζωής < 25%"
   },
   "repairwhenhp": {
-    "message": "Επισκευάσου όταν οι πόντοι ζωής < <span> (30%)</span>"
+    "message": "Επισκευάσου όταν οι πόντοι ζωής <span> ($$$%)</span>"
   },
   "jumpandreturn": {
     "message": "Πήδα σε πύλες και ξαναγύρνα"
