@@ -302,6 +302,7 @@ function logic() {
 	if(api.isRepairing){
 		if (MathUtils.percentFrom(window.hero.hp, window.hero.maxHp) < window.settings.settings.repairEndPercent) {
 			if (window.settings.settings.ggbot) {
+				api.flyingMode();
 				let gg_half_x = 10400;
 				let gg_half_y = 6450;
 				let f = Math.atan2(window.hero.position.x - gg_half_x, window.hero.position.y - gg_half_y) + 0.5;

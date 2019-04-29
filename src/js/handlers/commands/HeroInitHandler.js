@@ -42,8 +42,8 @@ class HeroInitHandler {
 				window.b3 = 700;
 				window.bigMap = true;
 			} else {
-				window.b1 = 21000 / 300;
-				window.b2 = 13100 / 150;
+				window.b1 = 20900 / 300;
+				window.b2 = 13000 / 150;
 				window.b3 = 350;
 				window.bigMap = false;
 			}

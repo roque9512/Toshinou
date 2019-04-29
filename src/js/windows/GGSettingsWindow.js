@@ -11,7 +11,7 @@ class GGSettingsWindow {
 			labelText: chrome.i18n.getMessage("ggbot"),
 			appendTo: this.GGSettingsWindow,
 			attrs: {
-				value: window.settings.settings.ggbot
+				checked: window.settings.settings.ggbot
 			},
 			event: function () {
 				window.settings.settings.ggbot = this.checked;
@@ -23,7 +23,7 @@ class GGSettingsWindow {
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Alpha',
 			appendTo: this.GGSettingsWindow,
 			attrs: {
-				value: window.settings.settings.alpha
+				checked: window.settings.settings.alpha
 			},
 			event: function () {
 				window.settings.settings.alpha = this.checked;
@@ -35,7 +35,7 @@ class GGSettingsWindow {
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Beta',
 			appendTo: this.GGSettingsWindow,
 			attrs: {
-				value: window.settings.settings.beta
+				checked: window.settings.settings.beta
 			},
 			event: function () {
 				window.settings.settings.beta = this.checked;
@@ -47,7 +47,7 @@ class GGSettingsWindow {
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Gamma',
 			appendTo: this.GGSettingsWindow,
 			attrs: {
-				value: window.settings.settings.gamma
+				checked: window.settings.settings.gamma
 			},
 			event: function () {
 				window.settings.settings.gamma = this.checked;
@@ -58,7 +58,9 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Delta',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.delta,
+			attrs: {
+				checked: window.settings.settings.delta
+			},
 			event: function () {
 				window.settings.settings.delta = this.checked;
 			}
@@ -68,7 +70,9 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Epsilon',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.epsilon,
+			attrs: {
+				checked: window.settings.settings.epsilon
+			},
 			event: function () {
 				window.settings.settings.epsilon = this.checked;
 			}
@@ -78,7 +82,9 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Zeta',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.zeta,
+			attrs: {
+				checked: window.settings.settings.zeta
+			},
 			event: function () {
 				window.settings.settings.zeta = this.checked;
 			}
@@ -88,7 +94,9 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Kappa',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.kappa,
+			attrs: {
+				checked: window.settings.settings.kappa
+			},
 			event: function () {
 				window.settings.settings.kappa = this.checked;
 			}
@@ -98,7 +106,9 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Lambda',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.lambda,
+			attrs: {
+				checked: window.settings.settings.lambda
+			},
 			event: function () {
 				window.settings.settings.lambda = this.checked;
 			}
@@ -108,19 +118,11 @@ class GGSettingsWindow {
 			type: 'checkbox',
 			labelText: chrome.i18n.getMessage("jumpin")+' GG Kronos',
 			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.kronos,
+			attrs: {
+				checked: window.settings.settings.kronos
+			},
 			event: function () {
 				window.settings.settings.kronos = this.checked;
-			}
-		},
-		{
-			name: 'kuiper',
-			type: 'checkbox',
-			labelText: chrome.i18n.getMessage("jumpin")+' GG Kuiper',
-			appendTo: this.GGSettingsWindow,
-			value: window.settings.settings.kuiper,
-			event: function () {
-				window.settings.settings.kuiper = this.checked;
 			}
 		}
 		]

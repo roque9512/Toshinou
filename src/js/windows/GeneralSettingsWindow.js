@@ -12,7 +12,7 @@ class GeneralSettingsWindow {
 		labelText: chrome.i18n.getMessage("palladiumbot"),
 		appendTo: this.botSettingsWindow,
 		attrs: {
-			value : window.settings.settings.palladium
+			checked : window.settings.settings.palladium
 		},
 		event: function () {
 			window.settings.settings.palladium = this.checked;

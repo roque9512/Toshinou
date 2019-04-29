@@ -1,9 +1,3 @@
-/*
-  ------------SUP----------
- --------- WHAT YOU----------
-----------DOING HERE----------
-*/
-
 class Variables {
 	static get assetCreateX() {
 		return "_-u1i";
@@ -103,14 +97,15 @@ class Variables {
 	
 	static get selectHp() {
 		return "_-lW";
-	}
-	
-	static get resourceType() {
-		return "_-J3";
-	}
-
+	}	
+		
 	static get battlestationClanDiplomacy() {
 		return "_-p1B"; 
 	}
 	
+	static get resourceType(){
+		return "_-J3";
+	}
+	
 }
+

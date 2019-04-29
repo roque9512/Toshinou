@@ -202,6 +202,12 @@ class Api {
 
 	move(x, y) {
 		if (!isNaN(x) && !isNaN(y)) {
+			// Avoid going to rad zone
+			// shit fix
+			if(!window.settings.settings.ggbot && (x < 100 || y < 100 || (window.bigMap && x > 42000 || y > 26200) || (!window.bigMap && x > 20900 || y > 13000))){
+				return;
+			}
+
 			if(window.invertedMovement){
 				x = x + ((window.hero.position.x - x)*2);
 				y = y + ((window.hero.position.y - y)*2);
