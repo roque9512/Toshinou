@@ -32,8 +32,8 @@ class NpcSettingsWindow {
 					type:'number',
 					name:n,
 					attrs:{
-						class: 'ranges '+n,
-						style:"width:50px;",
+						class: "ranges "+n,
+						style: "width:50px;",
 						value: window.settings.getNpc(n).priority
 					}, 
 					event:function(){

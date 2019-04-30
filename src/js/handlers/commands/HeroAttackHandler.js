@@ -20,11 +20,13 @@ class HeroAttackHandler {
 				window.hero.shd = shipAttackCmd[Variables.attackShd];
 			}
 
-			if (api.targetShip && attackedShipId == api.targetShip.id) {
-				api.lastAttack = $.now();
-				api.lastAttackSinceLock = $.now();
-			}
 			if (ship) {
+				if (api.targetShip && attackedShipId == api.targetShip.id) {
+					api.lastAttack = $.now();
+					api.lastAttackSinceLock = $.now();
+					ship.heroAttacked = true;
+				}
+				
 				if (attackerId == window.hero.id) {
 					window.attackWindow.hp(shipAttackCmd[Variables.attackHp]);
 					window.attackWindow.shd(shipAttackCmd[Variables.attackShd]);

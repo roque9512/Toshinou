@@ -87,6 +87,8 @@ class GGSettingsWindow {
 			},
 			event: function () {
 				window.settings.settings.zeta = this.checked;
+				window.settings.setNpcPriority("-=[ Devourer ]=- ζ25", 0);
+				window.settings.setNpcPriority("-=[ Devourer ]=- ζ27", 0);
 			}
 		},
 		{

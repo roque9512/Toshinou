@@ -157,7 +157,7 @@ class GeneralSettingsWindow {
 	},
 	{
 		name: 'repairStartPercent',
-		labelText: "Repair when HP <span> ("+window.settings.settings.repairStartPercent+")</span>",
+		labelText: "Repair when HP <span> ("+window.settings.settings.repairStartPercent+"%)</span>",
 		type: 'range',
 		appendTo: this.botSettingsWindow,
 		labelBefore: true,

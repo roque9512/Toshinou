@@ -204,10 +204,6 @@ class Api {
 		if (!isNaN(x) && !isNaN(y)) {
 			// Avoid going to rad zone
 			// shit fix
-			if(!window.settings.settings.ggbot && (x < 100 || y < 100 || (window.bigMap && x > 42000 || y > 26200) || (!window.bigMap && x > 20900 || y > 13000))){
-				return;
-			}
-
 			if(window.invertedMovement){
 				x = x + ((window.hero.position.x - x)*2);
 				y = y + ((window.hero.position.y - y)*2);
@@ -335,14 +331,8 @@ class Api {
 			let ship = this.ships[property];
 			if (ship && ship.name.indexOf("Devourer") != -1) {
 				window.settings.settings.resetTargetWhenHpBelow25Percent = false;
-				if (shipsCount > 1) {
-					this.blackListId(ship.id);
-					if (this.targetShip == ship) {
-						this.resetTarget("enemy");
-					}
-				} else {
-					this.whitelistId(ship.id);
-					this.targetShip = ship;
+				if(shipsCount > 1 && ship.id == this.targetShip.id){
+					this.resetTarget("enemy");
 				}
 			}
 		}

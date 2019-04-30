@@ -227,7 +227,7 @@ function logic() {
 
 	window.minimap.draw();
 
-	if(window.settings.settings.pause || api.jumped) return;
+	if(window.settings.settings.pause || api.jumped || (window.settings.settings.palladium && window.hero.mapId != 93)) return;
 
 	if (api.heroDied) {
 		api.resetTarget("all");
@@ -418,7 +418,7 @@ function logic() {
 		return;
 	}
 
-	if (window.X1Map || (window.settings.settings.palladium && window.hero.mapId != 93)) {
+	if (window.X1Map) {
 		return;
 	}
 
