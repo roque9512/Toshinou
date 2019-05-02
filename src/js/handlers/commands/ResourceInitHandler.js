@@ -1,6 +1,6 @@
 class ResourceInitHandler {
 	static get ID() {
-		return 21724; 
+		return 15475; 
 	}
 
 	constructor() {
