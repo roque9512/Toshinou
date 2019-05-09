@@ -331,7 +331,7 @@ class Api {
 			let ship = this.ships[property];
 			if (ship && ship.name.indexOf("Devourer") != -1) {
 				window.settings.settings.resetTargetWhenHpBelow25Percent = false;
-				if(shipsCount > 1 && ship.id == this.targetShip.id){
+				if(shipsCount > 1 && this.targetShip && ship.id == this.targetShip.id){
 					this.resetTarget("enemy");
 				}
 			}
@@ -761,7 +761,7 @@ class Api {
 		portals43.push(new Portal(150000194,12)); //4-3 | 3-4
 		portals43.push(new Portal(150000198,14)); //4-3 | 4-2
 		portals43.push(new Portal(150000199,13)); //4-3 | 4-1
-		portals43.push(new Portal(150000293,16)); //4-3 | 4-4
+		portals43.push(new Portal(150000303,16)); //4-3 | 4-4
 		this.starSystem.push(new Map(15, portals43));
 		let portals41 = [];
 		portals41.push(new Portal(150000190,4)); //4-1 | 1-4
