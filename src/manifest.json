@@ -1,0 +1,123 @@
+{
+  "manifest_version": 2,
+  "name": "Toshinou Infinite",
+  "version": "5.0",
+  "default_locale": "en",
+  "description": "__MSG_desextension__",
+    "page_action": {
+      "default_icon": {
+        "16": "images/Toshinou-logo-infinite-loop-16x16.png",
+        "32": "images/Toshinou-logo-infinite-loop-32x32.png",
+        "48": "images/Toshinou-logo-infinite-loop-48x48.png",
+        "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+      }
+    },
+  "icons": {
+    "16": "images/Toshinou-logo-infinite-loop-16x16.png",
+    "32": "images/Toshinou-logo-infinite-loop-32x32.png",
+    "48": "images/Toshinou-logo-infinite-loop-48x48.png",
+    "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.darkorbit.com/indexInternal.es?action=internalMapRevolution"],
+      "js": [
+        "js/libs/jquery-3.2.1.min.js",
+        "js/libs/jquery-ui.min.js",
+        "js/libs/konva.min.js",
+        "js/libs/md5.min.js",
+        "js/safety/SafetyChecker.js",
+        "js/safety/JavaScriptChecker.js",
+        "js/utils/ResourcesManager.js",
+        "js/utils/Injector.js",
+        "js/utils/Variables.js",
+        "js/utils/DragAndDrop.js",
+        "js/utils/TabsHelper.js",
+        "js/preferences/Settings.js",
+        "js/preferences/GlobalSettings.js",
+        "js/utils/math/Vector2D.js",
+        "js/utils/math/MathUtils.js",
+        "js/utils/math/graph.js",
+        "js/utils/WebClient.js",
+        "js/utils/BoxType.js",
+        "js/utils/ColorConverter.js",
+        "js/utils/TimeHelper.js",
+        "js/WindowFactory.js",
+        "js/windows/Minimap.js",
+        "js/windows/AttackWindow.js",
+        "js/windows/GeneralSettingsWindow.js",
+        "js/windows/GGSettingsWindow.js",
+        "js/windows/NpcSettingsWindow.js",
+        "js/windows/StatisticWindow.js",
+        "js/windows/AutolockWindow.js",
+        "js/windows/CollectionWindow.js",
+        "js/windows/ShipSettings.js",
+        "js/objects/Movable.js",
+        "js/objects/Box.js",
+        "js/objects/Hero.js",
+        "js/objects/Ship.js",
+        "js/objects/Gate.js",
+        "js/objects/Portal.js",
+        "js/objects/Map.js",
+        "js/objects/Pet.js",
+        "js/objects/CBS/Battlestation.js",
+        "js/objects/CBS/BattlestationModule.js",
+        "js/handlers/HandlersManager.js",
+        "js/handlers/events/HeroDisconnectedEventHandler.js",
+        "js/handlers/events/HeroConnectedEventHandler.js",
+        "js/handlers/events/MovementDoneEventHandler.js",
+        "js/handlers/events/HeroPositionUpdateEventHandler.js",
+        "js/handlers/commands/BoxInitHandler.js",
+        "js/handlers/commands/ResourceInitHandler.js",
+        "js/handlers/commands/ShipAttackHandler.js",
+        "js/handlers/commands/ShipCreateHandler.js",
+        "js/handlers/commands/AssetRemovedHandler.js",
+        "js/handlers/commands/HeroInitHandler.js",
+        "js/handlers/commands/ShipMoveHandler.js",
+        "js/handlers/commands/ShipDestroyedHandler.js",
+        "js/handlers/commands/ShipRemovedHandler.js",
+        "js/handlers/commands/GateInitHandler.js",
+        "js/handlers/commands/ShipSelectedHandler.js",
+        "js/handlers/commands/MessagesHandler.js",
+        "js/handlers/commands/HeroDiedHandler.js",
+        "js/handlers/commands/HeroUpdateHitpointsHandler.js",
+        "js/handlers/commands/AssetCreatedHandler.js",
+        "js/handlers/commands/HeroUpdateShieldHandler.js",
+        "js/handlers/commands/HeroPetUpdateHandler.js",
+        "js/handlers/commands/HeroAttackHandler.js",
+        "js/handlers/commands/HeroAffectedHandler.js",
+        "js/handlers/commands/HeroJumpedHandler.js",
+        "js/handlers/commands/PetUpdateFuel.js",
+        "js/handlers/commands/QuickslotHandler.js",
+        "js/Api.js",
+        "js/ControlFactory.js",
+        "js/worker.js"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+
+  "background": {
+    "scripts": ["js/background/filter.js"]
+  },
+
+  "web_accessible_resources": [
+    "res/injectables/*"
+  ],
+
+  "options_ui": {
+    "page": "html/settings.html",
+    "open_in_tab": false
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}

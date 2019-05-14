@@ -1,0 +1,263 @@
+﻿{
+  "toshidescription": {
+    "message": "Ένα cheat/εργαλείο/bot ή πές το όπως θέλεις για ένα διαδικτυακό flash παιχνίδι που ονομάζεται Darkorbit. Κάνει κάποια τέλεια πράγματα και είναι ακόμη σε βαριά ανάπτυξη.",
+    "description": "Περιγραφή του Toshinou"
+  },
+  "desextension": {
+    "message": "Ένα bot για το DarkOrbit, δημιουργήθηκε από τον Freshek.",
+    "description": "Η περιγραφή της επέκτασης Toshinou"
+  },
+  "appearance": {
+    "message": "Εμφάνιση"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Η περιγραφή της επέκτασης Toshinou"
+  },
+  "discordserver": {
+    "message": "Διακομηστής Discord"
+  },
+  "saveall": {
+    "message": "Αποθήκευση ρυθμίσεων"
+  },
+  "headercolor": {
+    "message": "Χρώμα κεφαλίδας"
+  },
+  "opacity": {
+    "message": "Αδιαφάνεια"
+  },
+  "windowbackgroundcolor": {
+    "message": "Χρώμα φόντου του παραθύρου"
+  },
+  "statisticwindow": {
+    "message": "Παράθυρο Στατιστικών"
+  },
+  "windowstotabs": {
+    "message": "Καρτέλες αντί για παράθυρα"
+  },
+  "speedformat": {
+    "message": "Λειτουργεία ταχύτηας"
+  },
+  "hour": {
+    "message": "ώρες"
+  },
+  "min": {
+    "message": "λεπτά"
+  },
+  "attackconfig": {
+    "message": "Σχηματισμός Επίθεσης:"
+  },
+  "flyingconfig": {
+    "message": "Σχηματισμός Πετάγματος:"
+  },
+  "advanced": {
+    "message": "Πρωχωρημένα (αρχάριοι, φύγετε!)"
+  },
+  "logictick": {
+    "message": "Λογική Χρόνου (μιλλιδευτερόλεπτο)"
+  },
+  "enablerefresh": {
+    "message": "Ενεργοποίησε λειτουργεία επαναφόρτωσης"
+  },
+  "refreshtime": {
+    "message": "Διάλειμμα επαναφόρτωσης (λεπτά)"
+  },
+  "clearsettings": {
+    "message": "Καθάρισε την αποθήκη των ρυθμίσεων (Λειτουργεία επαναφόρτωσης)"
+  },
+  "reviveat": {
+    "message": "Αναζωογονήσου σε/στην : "
+  },
+  "base": {
+    "message": "Βάση"
+  },
+  "gate": {
+    "message": "Πύλη"
+  },
+  "spot": {
+    "message": "Σημείο"
+  },
+  "norevive": {
+    "message": " Να μην αναζωγονηθείς"
+  },
+  "revivelimit": {
+    "message": "Όριο αναζωογονισης: "
+  },
+  "workmap": {
+    "message": "Χάρτης δουλείας: "
+  },
+  "any": {
+    "message": "Όποιο να ναι"
+  },
+  "boxsettings": {
+    "message": "Ρυθμίσεις κουτιών"
+  },
+  "bonusbox": {
+    "message": "Κουτιά δώρων"
+  },
+  "materials": {
+    "message": "Υλικά"
+  },
+  "cargobox": {
+    "message": "Κουτιά φορτίου"
+  },
+  "greenorgoldbooty": {
+    "message": "Πράσινα | Χρυσά κουτιά"
+  },
+  "redbooty": {
+    "message": "Κόκκινα κουτιά"
+  },
+  "bluebooty": {
+    "message": "Μπλέ κουτιά"
+  },
+  "masquebooty": {
+    "message": "Αποκαλυπτικά κουτιά"
+  },
+  "target": {
+    "message": "Εχθρός: "
+  },
+  "hp": {
+    "message": "Πόντοι Ζωής: "
+  },
+  "shd": {
+    "message": "Πόντοι Ασπίδας: "
+  },
+  "palladiumbot": {
+    "message": "Bot για palladium"
+  },
+  "moverandomly": {
+    "message": "Κοινήσου στα τυχαία"
+  },
+  "killnpcs": {
+    "message": "Σκότωσε NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Απομακρύνσου από εχθρό"
+  },
+  "avoidattackednpc": {
+    "message": "Απόφυγε ήδη-επιτιθημένα NPC"
+  },
+  "circle": {
+    "message": "Κάνε κύκλο"
+  },
+  "circleradius": {
+    "message": "Ακτίνα κίνησης κύκλου <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Σταμάτα τον κύκλο όταν οι πόντοι ζωής < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Επισκευάσου όταν οι πόντοι ζωής <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Πήδα σε πύλες και ξαναγύρνα"
+  },
+  "autochangeconfig": {
+    "message": "Άλλαξε σχηματισμό αυτόματα"
+  },
+  "dodgethecbs": {
+    "message": "Απόφυγε το CBS"
+  },
+  "resettarget": {
+    "message": "Κάνε επαναφορά τον εχθρό όταν οι πόντοι ζωής < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Αποθήκευση ρυθμίσεων & ενεργοποίηση επαναφόρτωσης"
+  },
+  "attackdetails": {
+    "message": "Πληροφορίες επίθεσης"
+  },
+  "general": {
+    "message": "Γενικά"
+  },
+  "gghelper": {
+    "message": "Βοηθός GG"
+  },
+  "ggbot": {
+    "message": "GG Bot (Μπορεί να έχει προβλήματα)"
+  },
+  "jumpin": {
+    "message": "Πήδα σε πύλη"
+  },
+  "minimap": {
+    "message": "Χάρτης"
+  },
+  "excludenpcto": {
+    "message": "Απόκλειε επίθεσεις ορισμένων NPC"
+  },
+  "statistic": {
+    "message": "Σταστικά"
+  },
+  "startat": {
+    "message": "Να αρχίσεις: "
+  },
+  "credits": {
+    "message": "Credits: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "Ενέργεια GG: "
+  },
+  "ammo": {
+    "message": "Πυρομαχικά: "
+  },
+  "experiencie": {
+    "message": "Εμπειρία: "
+  },
+  "honor": {
+    "message": "Τιμή: "
+  },
+  "rank": {
+    "message": "Πόντοι κατάταξης: "
+  },
+  "death": {
+    "message": "Θάνατοι: "
+  },
+  "speed": {
+    "message": "Ταχύτητα: "
+  },
+  "runtime": {
+    "message": "Χρόνος εκτέλεσης: "
+  },
+  "reset": {
+    "message": "Επαναφορά"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot: "
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot: "
+  },
+  "droneformations": {
+    "message": "Drone Formations"
+  },
+  "shipability": {
+    "message": "Ship Ability"
+  },
+  "useability": {
+    "message": "Use Ability"
+  },
+  "abilityslot": {
+    "message": "Ability slot: "
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}

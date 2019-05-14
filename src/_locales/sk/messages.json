@@ -1,0 +1,263 @@
+﻿{
+  "toshidescription": {
+    "message": "Cheat/nástroj/bot/hocičo pre prehliadačovú hru DarkOrbit. Stále je v obrovskóm vývoji.",
+    "description": "Toshinou popis"
+  },
+  "desextension": {
+    "message": "Bot pre DarkOrbit, vytvoril Freshek.",
+    "description": "Opis rozšírenia Toshinou"
+  },
+  "appearance": {
+    "message": "vzhľad"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Opis rozšírenia Toshinou"
+  },
+  "discordserver": {
+    "message": "Discord Server"
+  },
+  "saveall": {
+    "message": "Uložiť všetko"
+  },
+  "headercolor": {
+    "message": "Farba Hlavičky"
+  },
+  "opacity": {
+    "message": "Nepriehľadnosť"
+  },
+  "windowbackgroundcolor": {
+    "message": "Farba pozadia okna"
+  },
+  "statisticwindow": {
+    "message": "Okno so Štatistikami"
+  },
+  "windowstotabs": {
+    "message": "Karty namiesto okien"
+  },
+  "speedformat": {
+    "message": "Formát rýchlosti"
+  },
+  "hour": {
+    "message": "hodina"
+  },
+  "min": {
+    "message": "min"
+  },
+  "attackconfig": {
+    "message": "Útočná konfigurácia:"
+  },
+  "flyingconfig": {
+    "message": "Lietacia konfigurácia:"
+  },
+  "advanced": {
+    "message": "Pokročilé nastavenia (začiatočníci, chodte preć!)"
+  },
+  "logictick": {
+    "message": "Logic tick (ms)"
+  },
+  "enablerefresh": {
+    "message": "Povoliť funkciu obnovovania"
+  },
+  "refreshtime": {
+    "message": "Interval obnovovania (min): "
+  },
+  "clearsettings": {
+    "message": "Obnovoviť pamäť nastavení (Obnoviť nastavenia)"
+  },
+  "reviveat": {
+    "message": "Oživiť na: "
+  },
+  "base": {
+    "message": "Základni"
+  },
+  "gate": {
+    "message": "Bráne"
+  },
+  "spot": {
+    "message": "Mieste"
+  },
+  "norevive": {
+    "message": "Neoživovať"
+  },
+  "revivelimit": {
+    "message": "Limit oživovania: "
+  },
+  "workmap": {
+    "message": "Mapa"
+  },
+  "any": {
+    "message": "Hocijaká"
+  },
+  "boxsettings": {
+    "message": "Nastavenia Boxov"
+  },
+  "bonusbox": {
+    "message": "Bonusový box"
+  },
+  "materials": {
+    "message": "Materíaly"
+  },
+  "cargobox": {
+    "message": "Cargo box"
+  },
+  "greenorgoldbooty": {
+    "message": "Green | Gold boxy korisťi"
+  },
+  "redbooty": {
+    "message": "Red boxy korisťi"
+  },
+  "bluebooty": {
+    "message": "Blue boxy korisťi"
+  },
+  "masquebooty": {
+    "message": "Apokalyptické boxy korisťi"
+  },
+  "target": {
+    "message": "Ciel: "
+  },
+  "hp": {
+    "message": "HP: "
+  },
+  "shd": {
+    "message": "SHD: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Presúvať sa náhodne "
+  },
+  "killnpcs": {
+    "message": "Zabíjať NPC"
+  },
+  "fleefromenemy": {
+    "message": "Utekať od nepriateľa"
+  },
+  "avoidattackednpc": {
+    "message": "Vyhívať sa už napadnutým NPC<br>(Nepoužívať s P.E.T)"
+  },
+  "circle": {
+    "message": "Krúžiť"
+  },
+  "circleradius": {
+    "message": "Radius Krúženia <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Nekrúžiť keď npc má HP < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Opravovať keď < <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Skok a návrat"
+  },
+  "autochangeconfig": {
+    "message": "Automaticky meniť konfigurácie"
+  },
+  "dodgethecbs": {
+    "message": "Vyhívať sa klonovým staniciam"
+  },
+  "resettarget": {
+    "message": "Reštartovať ciel keď npc má HP < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Uložiť nastavenia a povoliť obnovenie stránky"
+  },
+  "attackdetails": {
+    "message": "Detaily Útoku"
+  },
+  "general": {
+    "message": "Hlavné"
+  },
+  "gghelper": {
+    "message": "GG Pomocník"
+  },
+  "ggbot": {
+    "message": "GG Bot (Testovanie)"
+  },
+  "jumpin": {
+    "message": "Skočiť do"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Vyňať NPC z útočenia"
+  },
+  "statistic": {
+    "message": "Štatisktiky"
+  },
+  "startat": {
+    "message": "Zapnuté: "
+  },
+  "credits": {
+    "message": "Kredity: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "GG Energie: "
+  },
+  "ammo": {
+    "message": "Munícia: "
+  },
+  "experiencie": {
+    "message": "Skúsenosti: "
+  },
+  "honor": {
+    "message": "Česť: "
+  },
+  "rank": {
+    "message": "Body do ranku: "
+  },
+  "death": {
+    "message": "Počet smrtí: "
+  },
+  "speed": {
+    "message": "Rýchlosť: "
+  },
+  "runtime": {
+    "message": "Spustený: "
+  },
+  "reset": {
+    "message": "Reštartovať štatistiku"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot: "
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot: "
+  },
+  "droneformations": {
+    "message": "Drone Formations"
+  },
+  "shipability": {
+    "message": "Ship Ability "
+  },
+  "useability": {
+    "message": "Use Ability"
+  },
+  "abilityslot": {
+    "message": "Ability slot: "
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}

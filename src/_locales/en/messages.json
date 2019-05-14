@@ -1,0 +1,260 @@
+{
+  "toshidescription": {
+    "message": "A cheat/tool/bot/whatever for a browser flash game named DarkOrbit. It does some pretty neat stuff and is still under heavy development.",
+    "description": "Toshinou description"
+  },
+  "desextension": {
+    "message": "Bot for DarkOrbit, created by Freshek.",
+    "description": "Toshinou Extension description"
+  },
+  "appearance": {
+    "message": "Appearance"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Toshinou Extension description"
+  },
+  "discordserver": {
+    "message": "Discord Server"
+  },
+  "saveall": {
+    "message": "Save All"
+  },
+  "headercolor": {
+    "message": "Header color"
+  },
+  "opacity": {
+    "message": "opacity"
+  },
+  "windowbackgroundcolor": {
+    "message": "Window background color"
+  },
+  "statisticwindow": {
+    "message": "Statistic window"
+  },
+  "windowstotabs": {
+    "message": "Tabs instead of windows"
+  },
+  "speedformat": {
+    "message": "Speed format"
+  },
+  "hour": {
+    "message": "hour"
+  },
+  "min": {
+    "message": "min"
+  },
+  "attackconfig": {
+    "message": "Attack Config:"
+  },
+  "flyingconfig": {
+    "message": "Flying Config:"
+  },
+  "advanced": {
+    "message": "Advanced (beginners, go away!)"
+  },
+  "logictick": {
+    "message": "Logic tick (ms)"
+  },
+  "enablerefresh": {
+    "message": "Enable refresh function"
+  },
+  "refreshtime": {
+    "message": "Refresh interval (min): "
+  },
+  "reviveat": {
+    "message": "Revive at: "
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Gate"
+  },
+  "spot": {
+    "message": "Spot"
+  },
+  "norevive": {
+    "message": "No revive"
+  },
+  "revivelimit": {
+    "message": "Revive limit: "
+  },
+  "workmap": {
+    "message": "Work Map: "
+  },
+  "any": {
+    "message": "Any"
+  },
+  "boxsettings": {
+    "message": "Box settings"
+  },
+  "bonusbox": {
+    "message": "Bonus box"
+  },
+  "materials": {
+    "message": "Materials"
+  },
+  "cargobox": {
+    "message": "Cargo box"
+  },
+  "greenorgoldbooty": {
+    "message": "Green | Gold booty boxes"
+  },
+  "redbooty": {
+    "message": "Red booty boxes"
+  },
+  "bluebooty": {
+    "message": "Blue booty boxes"
+  },
+  "masquebooty": {
+    "message": "Apocalyptic booty boxes"
+  },
+  "target": {
+    "message": "Target: "
+  },
+  "hp": {
+    "message": "HP: "
+  },
+  "shd": {
+    "message": "SHD: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Move randomly"
+  },
+  "killnpcs": {
+    "message": "Kill NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Flee from enemy"
+  },
+  "avoidattackednpc": {
+    "message": "Avoid attacked NPCs"
+  },
+  "circle": {
+    "message": "Circle"
+  },
+  "circleradius": {
+    "message": "Circle radius <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Don't circle when HP < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Repair when HP <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Jump And Return"
+  },
+  "autochangeconfig": {
+    "message": "Auto Change Config"
+  },
+  "dodgethecbs": {
+    "message": "Avoid CBS"
+  },
+  "resettarget": {
+    "message": "Reset Target when HP < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Save settings & Enable refresh"
+  },
+  "attackdetails": {
+    "message": "Attack Details"
+  },
+  "general": {
+    "message": "General"
+  },
+  "gghelper": {
+    "message": "GG Helper"
+  },
+  "ggbot": {
+    "message": "GG Bot (Testing)"
+  },
+  "jumpin": {
+    "message": "Jump in"
+  },
+  "minimap": {
+    "message": "Minimap"
+  },
+  "excludenpcto": {
+    "message": "Exclude NPC to attack"
+  },
+  "statistic": {
+    "message": "Statistic"
+  },
+  "startat": {
+    "message": "Start at: "
+  },
+  "credits": {
+    "message": "Credits: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "GG Energy: "
+  },
+  "ammo": {
+    "message": "Ammo: "
+  },
+  "experiencie": {
+    "message": "Experience: "
+  },
+  "honor": {
+    "message": "Honor: "
+  },
+  "rank": {
+    "message": "Rank Points: "
+  },
+  "death": {
+    "message": "Death count: "
+  },
+  "speed": {
+    "message": "Speed: "
+  },
+  "runtime": {
+    "message": "Runtime: "
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot: "
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot: "
+  },
+  "droneformations": {
+    "message": "Drone Formations"
+  },
+  "shipability": {
+    "message": "Ship Ability "
+  },
+  "useability": {
+    "message": "Use Ability"
+  },
+  "abilityslot": {
+    "message": "Ability slot: "
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}

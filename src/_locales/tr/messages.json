@@ -1,0 +1,263 @@
+{
+  "toshidescription": {
+    "message": "Su ana kadar Darkorbit icin yapilmis en iyi botlardan bir tanesidir.",
+    "description": "Toshinou Aciklamasi"
+  },
+  "desextension": {
+    "message": "Freshek tarafindan kodlanmistir.",
+    "description": "Toshinou Eklenti Aciklamasi"
+  },
+  "appearance": {
+    "message": "Gorunum"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Toshinou Eklenti Aciklamasi"
+  },
+  "discordserver": {
+    "message": "Discord Sunucusu"
+  },
+  "saveall": {
+    "message": "Her Seyi Kaydet"
+  },
+  "headercolor": {
+    "message": "Baslik rengi"
+  },
+  "opacity": {
+    "message": "Saydamlik"
+  },
+  "windowbackgroundcolor": {
+    "message": "Pencere arkaplan rengi"
+  },
+  "statisticwindow": {
+    "message": "Istatistik penceresi"
+  },
+  "windowstotabs": {
+    "message": "Ozellikleri pencere halinda goster"
+  },
+  "speedformat": {
+    "message": "Hiz turu"
+  },
+  "hour": {
+    "message": "saat"
+  },
+  "min": {
+    "message": "dakika"
+  },
+  "attackconfig": {
+    "message": "Saldiri Konfisi:"
+  },
+  "flyingconfig": {
+    "message": "Ucus Konfisi:"
+  },
+  "advanced": {
+    "message": "Gelismis (acemiler, siz hic dokunmayin bile!)"
+  },
+  "logictick": {
+    "message": "Zamanlayici suresi(ms)"
+  },
+  "enablerefresh": {
+    "message": "Sayfa yenileme ozelligini ayarla"
+  },
+  "refreshtime": {
+    "message": "Yenileme araligi (dakika)"
+  },
+  "clearsettings": {
+    "message": "Uygulanmis ayarlari temizle (Ozelligi yenile)"
+  },
+  "reviveat": {
+    "message": "Dogus yeri: "
+  },
+  "base": {
+    "message": "Ana us"
+  },
+  "gate": {
+    "message": "Kapi"
+  },
+  "spot": {
+    "message": "Herhangi biryer"
+  },
+  "norevive": {
+    "message": "Dogma"
+  },
+  "revivelimit": {
+    "message": "Canlanma limiti: "
+  },
+  "workmap": {
+    "message": "Harita"
+  },
+  "any": {
+    "message": "Herhangi"
+  },
+  "boxsettings": {
+    "message": "Kutu ayarlari"
+  },
+  "bonusbox": {
+    "message": "Avantaj kutusu"
+  },
+  "materials": {
+    "message": "Materyaller"
+  },
+  "cargobox": {
+    "message": "Kargo kutulari"
+  },
+  "greenorgoldbooty": {
+    "message": "Yesil / Altin Korsan kutusu"
+  },
+  "redbooty": {
+    "message": "Kirmizi korsan kutusu"
+  },
+  "bluebooty": {
+    "message": "Mavi korsan kutusu"
+  },
+  "masquebooty": {
+    "message": "Apocalyptic kutusu"
+  },
+  "target": {
+    "message": "Hedef: "
+  },
+  "hp": {
+    "message": "Can: "
+  },
+  "shd": {
+    "message": "Kalkan: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Botu"
+  },
+  "moverandomly": {
+    "message": "Rastgele Hareket Et"
+  },
+  "killnpcs": {
+    "message": "NPCleri Kes"
+  },
+  "fleefromenemy": {
+    "message": "Dusmandan kac"
+  },
+  "avoidattackednpc": {
+    "message": "NPC saldirilarindan kacin<br>"
+  },
+  "circle": {
+    "message": "Daire"
+  },
+  "circleradius": {
+    "message": "Daire yaricapi<span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Can < 25% olunca daire cizme"
+  },
+  "repairwhenhp": {
+    "message": "Can < <span> ($$$%)</span> olunca tamir ol"
+  },
+  "jumpandreturn": {
+    "message": "Atla ve Geri Don"
+  },
+  "autochangeconfig": {
+    "message": "Otomatik Konfi Degistir"
+  },
+  "dodgethecbs": {
+    "message": "Savas istasyonunu esgec"
+  },
+  "resettarget": {
+    "message": "Can < 25% hedefi sifirla"
+  },
+  "savesettingsandenable": {
+    "message": "Ayarlari kaydet ve degisiklikleri onayla"
+  },
+  "attackdetails": {
+    "message": "Saldiri Detaylari"
+  },
+  "general": {
+    "message": "Genel Ayarlar"
+  },
+  "gghelper": {
+    "message": "GG Yardimcisi"
+  },
+  "ggbot": {
+    "message": "GG Bot (Test Asamasi)"
+  },
+  "jumpin": {
+    "message": "Iceri atla"
+  },
+  "minimap": {
+    "message": "Mini Harita"
+  },
+  "excludenpcto": {
+    "message": "Haric tutulacak NPC listesi"
+  },
+  "statistic": {
+    "message": "Istatistikler"
+  },
+  "startat": {
+    "message": "Basl. Saati: "
+  },
+  "credits": {
+    "message": "Krediler: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "GG Enerjisi: "
+  },
+  "ammo": {
+    "message": "Mermi: "
+  },
+  "experiencie": {
+    "message": "Tecrube: "
+  },
+  "honor": {
+    "message": "Seref: "
+  },
+  "rank": {
+    "message": "Rutbe Puani: "
+  },
+  "death": {
+    "message": "Toplam patlama: "
+  },
+  "speed": {
+    "message": "Hiz: "
+  },
+  "runtime": {
+    "message": "Calisma Suresi: "
+  },
+  "reset": {
+    "message": "Sifirla"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot: "
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot: "
+  },
+  "droneformations": {
+    "message": "Drone Formations"
+  },
+  "shipability": {
+    "message": "Ship Ability "
+  },
+  "useability": {
+    "message": "Use Ability"
+  },
+  "abilityslot": {
+    "message": "Ability slot"
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}

@@ -1,0 +1,76 @@
+﻿<!-- created by Freshek on 30.10.2017 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <form>
+    <h4>Appearance</h4>
+    <label>Header color
+      <input type="color" id="headerColor" value="#16262f">
+    </label>
+    <label> | opacity
+      <input type="range" id="headerOpacity" min="0" max="1" step="0.01" value="0.9">
+    </label>
+    <br>
+    <label>Window background color
+      <input type="color" id="windowColor" value="#16262f">
+    </label>
+    <label> | opacity
+      <input type="range" id="windowOpacity" min="0" max="1" step="0.01" value="0.8">
+    </label>
+    <br>
+
+    <input type="checkbox" id="windowsToTabs" />
+    <label for="windowsToTabs">Tabs instead of windows</label>
+
+    <hr>
+
+    <h4>Advanced (beginners, go away!)</h4>
+    <label>Logic tick (ms)
+      <input type="number" id="timerTick" min="50" max="20000" value="300">
+    </label>
+    <br>
+
+    <hr>
+
+    <h4>Statistic window</h4>
+    <h5>Speed format</h5>
+    <input type="radio" id="speedFormat_min" name="speedFormat" value="min">
+    <label for="speedFormat_min">uri/min.</label>
+    <br>
+    <input type="radio" id="speedFormat_hour" name="speedFormat" value="hour" checked>
+    <label for="speedFormat_hour">uri/hour</label>
+
+    <hr>
+
+    <hr>
+
+    <h4>Ship Ability Settings</h4>
+    <h5>Ship Abilities activation threshold</h5>
+    <label>Venom HP threshold:  
+      <input type="number" style="width:20%" size="5" min='1' id="venomHp" name="venomHp" value="60000">
+    </label>
+    <br>
+    <label>Cyborg HP threshold: 
+      <input type="number" style="width:20%" size="5" min='1' id="cyborgHp" name="cyborgHp" value="100000">
+    </label>
+    <br>
+    <label>Diminisher Shield threshold: 
+      <input type="number" style="width:20%" size="5" min='1' id="diminisherShd" name="diminisherShd" value="60000">
+    </label>
+
+    <hr>
+
+    <input type="submit" value="save">
+  </form>
+
+  <script src="/js/libs/jquery-3.2.1.min.js"></script>
+  <script src="settings.js"></script>
+</body>
+
+</html> 

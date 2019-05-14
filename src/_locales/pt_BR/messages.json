@@ -1,0 +1,263 @@
+﻿{
+  "toshidescription": {
+    "message": "Um cheat/ferramenta/bot para um site flash game chamado DarkOrbit. Ele faz algumas coisas bem legais e ainda est sob forte desenvolvimento.",
+    "description": "descrição do Toshinou"
+  },
+  "desextension": {
+    "message": "Bot para DarkOrbit, criado por Freshek.",
+    "description": "Toshinou Extension description"
+  },
+  "appearance": {
+    "message": "Aparência"
+  },
+  "translateby": {
+    "message": "Tanoshiizo",
+    "description": "Toshinou Extension description"
+  },
+  "discordserver": {
+    "message": "Servidor Discord"
+  },
+  "saveall": {
+    "message": "Salvar tudo"
+  },
+  "headercolor": {
+    "message": "Cor do título"
+  },
+  "opacity": {
+    "message": "Opacidade"
+  },
+  "windowbackgroundcolor": {
+    "message": "Cor do fundo da janela"
+  },
+  "statisticwindow": {
+    "message": "Janela de Estatísticas"
+  },
+  "windowstotabs": {
+    "message": "Abas em vez de janelas"
+  },
+  "speedformat": {
+    "message": "Formato de velocidade"
+  },
+  "hour": {
+    "message": "hora"
+  },
+  "min": {
+    "message": "minutos"
+  },
+  "attackconfig": {
+    "message": "Configuração de combate:"
+  },
+  "flyingconfig": {
+    "message": "Configuração de correr:"
+  },
+  "advanced": {
+    "message": "Avançado (iniciantes, vão embora!)"
+  },
+  "logictick": {
+    "message": "Intervalo da lógica(ms)"
+  },
+  "enablerefresh": {
+    "message": "Ativar função de atualização"
+  },
+  "refreshtime": {
+    "message": "Intervalo de atualização (minutos)"
+  },
+  "clearsettings": {
+    "message": "Limpar armazenamento de configurações (Função de atualização)"
+  },
+  "reviveat": {
+    "message": "Reviver em: "
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Portal"
+  },
+  "spot": {
+    "message": "Local"
+  },
+  "norevive": {
+    "message": "Não reviver"
+  },
+  "revivelimit": {
+    "message": "Limite de reviver: "
+  },
+  "workmap": {
+    "message": "Mapa de trabalho: "
+  },
+  "any": {
+    "message": "Qualquer"
+  },
+  "boxsettings": {
+    "message": "configuraes de box"
+  },
+  "bonusbox": {
+    "message": "Bonus box"
+  },
+  "materials": {
+    "message": "Materiais"
+  },
+  "cargobox": {
+    "message": "Cargo box"
+  },
+  "greenorgoldbooty": {
+    "message": "Caixas Verde | Caixas Douradas"
+  },
+  "redbooty": {
+    "message": "Caixas vermelhas"
+  },
+  "bluebooty": {
+    "message": "Caixas azuis"
+  },
+  "masquebooty": {
+    "message": "Caixas Apocalipse"
+  },
+  "target": {
+    "message": "Alvo: "
+  },
+  "hp": {
+    "message": "Vida: "
+  },
+  "shd": {
+    "message": "Escudo: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Mover aleatóriamente"
+  },
+  "killnpcs": {
+    "message": "Matar NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Fuja do inimigo"
+  },
+  "avoidattackednpc": {
+    "message": "Evite NPCs atacados"
+  },
+  "circle": {
+    "message": "Circulo"
+  },
+  "circleradius": {
+    "message": "Raio do círculo <span> (500px) </ span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Não circule quando a Vida <25%"
+  },
+  "repairwhenhp": {
+    "message": "Reparar quando a Vida <span> (30%) </ span>"
+  },
+  "jumpandreturn": {
+    "message": "Saltar e retornar"
+  },
+  "autochangeconfig": {
+    "message": "Trocar automaticamente de configurção"
+  },
+  "dodgethecbs": {
+    "message": "Esquivar-se das Bases"
+  },
+  "resettarget": {
+    "message": "Redefinir alvo quando a HP <25%"
+  },
+  "savesettingsandenable": {
+    "message": "Salvar configurações e Ativar atualização"
+  },
+  "attackdetails": {
+    "message": "Detalhes do ataque"
+  },
+  "general": {
+    "message": "Geral"
+  },
+  "gghelper": {
+    "message": "Ajudante de GG"
+  },
+  "ggbot": {
+    "message": "GG Bot (Testando)"
+  },
+  "jumpin": {
+    "message": "Pular em"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Excluir NPC para atacar"
+  },
+  "statistic": {
+    "message": "Estatísticas"
+  },
+  "startat": {
+    "message": "Começou: "
+  },
+  "credits": {
+    "message": "Créditos: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "Energia Extra: "
+  },
+  "ammo": {
+    "message": "Munição: "
+  },
+  "experiencie": {
+    "message": "Experiência: "
+  },
+  "honor": {
+    "message": "Honra: "
+  },
+  "rank": {
+    "message": "Pontos de rank: "
+  },
+  "death": {
+    "message": "Contagem de mortes: "
+  },
+  "speed": {
+    "message": "Velocidade: "
+  },
+  "runtime": {
+    "message": "Tempo de execução: "
+  },
+  "reset": {
+    "message": "Resetar"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Mudar Formação de drone"
+  },
+  "attackformationslot": {
+    "message": "Slot da formação de combate: "
+  },
+  "flyingformationslot": {
+    "message": "Slot da formação de voar: "
+  },
+  "droneformations": {
+    "message": "Formação de drone"
+  },
+  "shipability": {
+    "message": "Habilidade da nave"
+  },
+  "useability": {
+    "message": "Usar Habilidade"
+  },
+  "abilityslot": {
+    "message": "Slot da habilidade: "
+  },
+  "camouflageslot": {
+    "message": "Slot da camuflagem: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}
