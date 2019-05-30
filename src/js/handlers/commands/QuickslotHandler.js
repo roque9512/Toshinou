@@ -1,6 +1,6 @@
 class QuickslotHandler{
 	static get ID(){
-		return 18457;
+		return 31901;
 	}
 
 	constructor(){

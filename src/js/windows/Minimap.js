@@ -140,6 +140,14 @@ class Minimap {
 			this._fillCircle(ct, pos.x / window.b1, pos.y / window.b2, 2);
 		}
 
+		if(this._api.destination){
+			ct.beginPath();
+			ct.moveTo(window.hero.position.x / window.b1, window.hero.position.y / window.b2);
+			ct.lineTo(this._api.destination.x / window.b1, this._api.destination.y / window.b2);
+			ct.strokeStyle = "rgba(0, 152, 255, 0.9)";
+			ct.stroke();
+		}
+
 		if(window.settings.WorkArea){
 			ct.beginPath();
 			ct.rect(window.settings.WorkArea.x / window.b1, window.settings.WorkArea.y / window.b2,

@@ -1,6 +1,6 @@
 class Portal{
-    constructor(gateId, idLinkedMap){
-      this.gateId = gateId;
-      this.idLinkedMap = idLinkedMap;
-    }
+  constructor(coord, idLinkedMap){
+    this.coord = coord;
+    this.idLinkedMap = idLinkedMap;
+  }
 }

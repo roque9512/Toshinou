@@ -4,7 +4,7 @@ Created by Freshek on 07.10.2017
 
 class HeroAttackHandler {
   static get ID() {
-    return 22121; 
+    return 8649; 
   }
 
 	constructor() {
@@ -29,7 +29,7 @@ class HeroAttackHandler {
 				
 				if (attackerId == window.hero.id) {
 					window.attackWindow.hp(shipAttackCmd[Variables.attackHp]);
-					window.attackWindow.shd(shipAttackCmd[Variables.attackShd]);
+						window.attackWindow.shd(shipAttackCmd[Variables.attackShd]);
 					window.attackWindow.targetName(ship.name);
 				}
 

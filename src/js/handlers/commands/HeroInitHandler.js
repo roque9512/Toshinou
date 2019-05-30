@@ -1,6 +1,6 @@
 class HeroInitHandler {
   static get ID() {
-    return 5017; 
+    return 9731; 
   }
 
 	constructor(f) {
@@ -9,6 +9,7 @@ class HeroInitHandler {
 			a.ships = [];
 			a.boxes = {};
 			a.gates = [];
+			a.rute = null;
 			a.heroDied = false;
 			a.resetTarget("all");
 			a.battlestation = null;
