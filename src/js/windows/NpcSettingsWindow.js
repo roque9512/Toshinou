@@ -87,6 +87,7 @@ class NpcSettingsWindow {
 			"-=[ Annihilator ]=-",
 			"-=[ Battleray ]=-",
 			"-=[ Deadly Battleray ]=-",
+			"( Uber Battleray )",
 			"..::{ Boss Streuner }::..",
 			"..::{ Boss Lordakia }::..",
 			"..::{ Boss Mordon }::..",
