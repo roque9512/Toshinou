@@ -42,6 +42,16 @@ class MessagesHandler {
 					connected: true,
 					status: 'on'
 				});
+			}else if("n" == message[1]){
+				if("EMP" == message[2]){
+					let emp_ship_id = message[3];
+					if(a.targetShip && emp_ship_id == a.targetShip.id){
+						console.log("saimon emp");
+						this.attacking = false;
+						this.lockedShip = null;
+						a.lockShip(a.targetShip);
+					}
+				}
 			}
 
 			if (_events.hasOwnProperty(message[3])) {

@@ -1,6 +1,6 @@
 class BoxInitHandler {
 	static get ID() {
-		return 12912;
+		return 13142; 
 	}
 
 	constructor() {

@@ -45,10 +45,10 @@
     "message": "min"
   },
   "attackconfig": {
-    "message": "Attack Config:"
+    "message": "Attack Config: "
   },
   "flyingconfig": {
-    "message": "Flying Config:"
+    "message": "Flying Config: "
   },
   "advanced": {
     "message": "Advanced (beginners, go away!)"

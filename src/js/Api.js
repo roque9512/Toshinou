@@ -78,23 +78,44 @@ class Api {
 	}
 	
 	combatMode(){
-		if (window.settings.settings.autoChangeConfig && window.settings.settings.attackConfig != window.hero.shipconfig){
-			this.changeConfig();
-		}
-		if (window.settings.settings.changeFormation && !this.isRepairing){
-			if (window.settings.settings.attackFormation != this.formation) {
-				this.changeFormation(window.settings.settings.attackFormation);
+		if (window.settings.settings.attackConfig != window.hero.shipconfig){
+			if(this.changeConfig()){
+				return true;
 			}
 		}
+		if (!this.isRepairing){
+			if (window.settings.settings.attackFormation != this.formation) {
+				if(this.changeFormation(window.settings.settings.attackFormation))
+					return true;
+			}
+		}
+		return false;
+	}
+
+	fleeingMode(){
+		if (window.settings.settings.fleeingConfig != window.hero.shipconfig) {
+			if(this.changeConfig()){
+				return true;
+			}
+		}
+		if (this.formation != window.settings.settings.fleeingFormation) {
+			if(this.changeFormation(window.settings.settings.fleeingFormation))
+				return true;
+		}
+		return false;
 	}
 
 	flyingMode(){
-		if (window.settings.settings.autoChangeConfig && window.settings.settings.flyingConfig != window.hero.shipconfig) {
-			this.changeConfig();
+		if (window.settings.settings.flyingConfig != window.hero.shipconfig) {
+			if(this.changeConfig()){
+				return true;
+			}
 		}
-		if (window.settings.settings.changeFormation && this.formation != window.settings.settings.flyingFormation) {
-			this.changeFormation(window.settings.settings.flyingFormation);
+		if (this.formation != window.settings.settings.flyingFormation) {
+			if(this.changeFormation(window.settings.settings.flyingFormation))
+				return true;
 		}
+		return false;
 	}
 
 	useAbility(){
@@ -122,7 +143,9 @@ class Api {
 			this.changeFormationTime = $.now();
 			this.formation = n;
 			this.quickSlot(n);
+			return true;
 		}
+		return false;
 	}
 	
 	quickSlot(n){
@@ -235,7 +258,9 @@ class Api {
 		if (this.changeConfigTime && $.now() - this.changeConfigTime > 5000) {
 			this.changeConfigTime = $.now();
 			Injector.injectScript('document.getElementById("preloader").changeConfig();');
+			return true;
 		}
+		return false;
 	}
 
 
@@ -289,58 +314,6 @@ class Api {
 		return hasJumped;
 	}
 
-	ggDeltaFix() {
-		let shipsCount = Object.keys(this.ships).length;
-		for (let property in this.ships) {
-			let ship = this.ships[property];
-			if (ship && (ship.name == "-=[ StreuneR ]=- δ4" || 
-				ship.name == "-=[ Lordakium ]=- δ9" || 
-				ship.name == "-=[ Sibelon ]=- δ14" || 
-				ship.name == "-=[ Kristallon ]=- δ19")) {
-				window.settings.settings.resetTargetWhenHpBelow25Percent=false;
-				if (shipsCount > 1) {
-					window.settings.setNpc(ship.name, true);
-					if (this.targetShip == ship){
-						this.resetTarget("enemy");
-					}
-				} else {
-					window.settings.setNpc(ship.name, false);
-					this.targetShip = ship;
-				}
-			}
-		}
-	}
-
-	ggZetaFix() {
-		let shipsCount = Object.keys(this.ships).length;
-		for (let property in this.ships) {
-			let ship = this.ships[property];
-			if (ship && ship.name.indexOf("Devourer") != -1) {
-				window.settings.settings.resetTargetWhenHpBelow25Percent = false;
-				if(shipsCount > 1 && this.targetShip && ship.id == this.targetShip.id){
-					this.resetTarget("enemy");
-				}
-			}
-		}
-	}
-
-	battlerayFix() {
-		for (let property in this.ships) {
-			let ship = this.ships[property];
-			if (ship && (ship.name == "-=[ Battleray ]=-") && ship.distanceTo(window.hero.position) < 700) {
-				let shipsCount = this.countNpcAroundByType("-=[ Interceptor ]=-", 600);
-				if (shipsCount > 1 && !(lockedShip && lockedShip.percentOfHp > 80 && lockedShip.name == "-=[ Battleray ]=-")) {
-					window.settings.setNpc(ship.name, true);
-					if (this.targetShip == ship){
-						this.resetTarget("enemy");
-					}
-				} else {
-					window.settings.setNpc(ship.name, false);
-					this.targetShip = ship;
-				}
-			}
-		}
-	}
 
 	countNpcAroundByType(type, distance){
 		let shipsCount = Object.keys(this.ships).length;
@@ -409,6 +382,15 @@ class Api {
 		};
 	}
 	
+	battlerayFix(battle){
+		// If  battleray is attacking the hero in palla mode, ignore npc blocklist
+		if (window.settings.settings.palladium &&
+			battle.targetShip && battle.targetShip.id == window.hero.id &&
+			battle.distanceTo(window.hero.position) < 700){
+			return true;
+		}
+		return false;
+	}
 
 	findNearestShip() {
 		let minDist = window.settings.settings.palladium ? window.settings.settings.npcCircleRadius : 100000;
@@ -429,7 +411,12 @@ class Api {
 			let dist = ship.distanceTo(window.hero.position);
 			let priority = window.settings.getNpc(ship.name).priority;
 
-			if (ship.isNpc && !window.settings.getNpc(ship.name).blocked && !this.isShipOnBlacklist(ship.id) && !ship.isAttacked) {
+			if (ship.isNpc &&
+				(!window.settings.getNpc(ship.name).blocked || this.battlerayFix(ship)) &&
+				!this.isShipOnBlacklist(ship.id) &&
+				!ship.isAttacked &&
+				!ship.ish)
+			{
 				if((ship.firstAttacker == null || (ship.firstAttacker != null && ship.firstAttacker == window.hero.id) ||
 					!window.settings.settings.avoidAttackedNpcs)) {
 					if(priority > highestPriority){	

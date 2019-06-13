@@ -43,12 +43,12 @@ class Settings {
 			blueBooty: false,
 			masqueBooty: false,
 			collectBoxWhenCircle: false,
-			autoChangeConfig: false,
 			attackConfig: 1,
 			flyingConfig: 1,
-			changeFormation: false,
+			fleeingConfig: 1,
 			attackFormation: -2,
 			flyingFormation: -2,
+			fleeingFormation: -2,
 			useAbility: false,
 			abilitySlot: -1,
 			autoCamo: false,
@@ -107,15 +107,14 @@ class Settings {
 	}
 
 	get WorkArea(){
-		return this.settings.workArea;
+		return this.settings.workArea[window.hero.mapId];
 	}
 
 	set WorkArea({x, y, w, h}){
 		if((w-x) == 0 || (h - y) == 0){
-			this.settings.workArea = null;
+			this.settings.workArea[window.hero.mapId] = null;
 		}else{
-			this.settings.workArea = {x, y, w, h};
+			this.settings.workArea[window.hero.mapId] = {x, y, w, h};
 		}
-		
 	}
 }

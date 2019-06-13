@@ -14,10 +14,10 @@ class Minimap {
 			height: 150
 		});
 		this.areaButton = jQuery("<button/>", {
-			text: "+",
+			text: "work area",
 			width: 10,
-			height: 10,
-			style: "background-color: rgb(22, 38, 47);"
+			height: 7,
+			style: "background-color: rgb(22, 38, 47); color: white;"
 		})
 		this.trail = [];
 		this.ctx = this.canvas.get(0).getContext("2d");
@@ -31,6 +31,8 @@ class Minimap {
 		
 		this.areaButton.click(function(e){
 			self.areaMode = !self.areaMode;
+			self.areaButton[0].style.backgroundColor = (self.areaMode) ? "white" : "rgb(22, 38, 47)";
+			self.areaButton[0].style.color = (self.areaMode) ? "rgb(22, 38, 47)" :  "white";
 		});
 
 		this.canvas.click(function (e) {
