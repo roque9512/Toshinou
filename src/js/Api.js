@@ -220,6 +220,8 @@ class Api {
 			return;
 		}
 
+		this.boxes[box.hash].tries++;
+
 		Injector.injectScript('document.getElementById("preloader").collectBox' + box.hash + '()');
 
 		this.collectTime = $.now();

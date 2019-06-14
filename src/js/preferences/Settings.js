@@ -66,7 +66,7 @@ class Settings {
 			sabSwitcher: false,
 			sabSlot: -1,
 			mainAmmoSlot: -1,
-			workArea : null
+			workArea : {}
 		};
 		chrome.storage.local.get(this.defaults, items => {
 			this.settings = items;
@@ -107,6 +107,10 @@ class Settings {
 	}
 
 	get WorkArea(){
+		// Temp fix for people that have the old bug on their storage
+		if(this.settings.workArea == null){
+			this.settings.workArea = {};
+		}
 		return this.settings.workArea[window.hero.mapId];
 	}
 

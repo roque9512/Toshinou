@@ -501,6 +501,20 @@ function logic() {
 		}
 	}
 
+	if (api.targetBoxHash && $.now() - api.collectTime > 3000) {
+		let box = api.boxes[api.targetBoxHash];
+		if (box && (box.distanceTo(window.hero.position) > 300)) {
+			api.collectTime = $.now();
+		} else if(box && box.tries < 2){
+			api.collectBox(box);
+			api.collectTime = $.now();
+			return;
+		} else {
+			delete api.boxes[api.targetBoxHash];
+			api.blackListHash(api.targetBoxHash);
+			api.resetTarget("box");
+		}
+	}
 
 	let x;
 	let y;
@@ -590,13 +604,10 @@ function logic() {
 			x = 450;
 			y = 302;
 		} else if ((dist > 600 && (api.lockedShip == null || api.lockedShip.id != api.targetShip.id) && $.now() - api.lastMovement > 1000)) {
-			console.log("Moving straight");
 			x = api.targetShip.position.x - MathUtils.random(-50, 50);
 			y = api.targetShip.position.y - MathUtils.random(-50, 50);
 			api.lastMovement = $.now();
 		} else if (api.lockedShip && window.settings.settings.dontCircleWhenHpBelow25Percent && api.lockedShip.percentOfHp < 25 && api.lockedShip.id == api.targetShip.id ) {
-			console.log("Don't circle when hp low");
-
 			let d = api.targetShip.range;
 			d -= d * 0.38; // Reduces range to npc by 38%
 			
