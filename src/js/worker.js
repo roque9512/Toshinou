@@ -620,7 +620,14 @@ function logic() {
 			y = api.targetShip.position.y + Math.cos(f) * d;
 			api.lastMovement = $.now();
 
-		} else if (window.settings.settings.ggbot && Object.keys(api.ships).length > 1 && window.settings.settings.resetTargetWhenHpBelow25Percent && api.lockedShip && api.lockedShip.percentOfHp < 25 && api.lockedShip.id == api.targetShip.id) {
+		} else if ( window.settings.settings.ggbot &&
+					Object.keys(api.ships).length > 1 &&
+					window.settings.settings.resetTargetWhenHpBelow25Percent &&
+					api.lockedShip &&
+					api.lockedShip.percentOfHp < 25 &&
+					api.lockedShip.id == api.targetShip.id &&
+					!api.zetaLastTwo()) 
+		{
 			console.log("Resetting target");
 			api.resetTarget("enemy");
 		} else if ((!window.settings.settings.ggbot && !api.attacking) ||

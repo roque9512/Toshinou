@@ -394,6 +394,16 @@ class Api {
 		return false;
 	}
 
+	zetaLastTwo(){
+		for (let property in this.ships) {
+			var ship = this.ships[property];
+			if(ship.name.indexOf("Devourer")!= -1){
+				return true;
+			}
+		}
+		return false;
+	}
+
 	findNearestShip() {
 		let minDist = window.settings.settings.palladium ? window.settings.settings.npcCircleRadius : 100000;
 		let finalShip;

@@ -57,8 +57,9 @@ class Box extends Movable {
 
 	isEvent(){
 		let type = this.type;
-		return (type == "ALIEN_EGG");
+		return (type == "ALIEN_EGG" || type == "CHROMIN_BOX_1" || type == "CHROMIN_BOX_2" || type == "CHROMIN_BOX_3" || type == "CHROMIN_BOX_4");
 	}
+
 
 	isMaterial() {
 		let type = this.type;
