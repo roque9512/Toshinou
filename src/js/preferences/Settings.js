@@ -43,12 +43,12 @@ class Settings {
 			blueBooty: false,
 			masqueBooty: false,
 			collectBoxWhenCircle: false,
+			autoChangeConfig: false,
 			attackConfig: 1,
 			flyingConfig: 1,
-			fleeingConfig: 1,
+			changeFormation: false,
 			attackFormation: -2,
 			flyingFormation: -2,
-			fleeingFormation: -2,
 			useAbility: false,
 			abilitySlot: -1,
 			autoCamo: false,
@@ -66,7 +66,7 @@ class Settings {
 			sabSwitcher: false,
 			sabSlot: -1,
 			mainAmmoSlot: -1,
-			workArea : {}
+			workArea : null
 		};
 		chrome.storage.local.get(this.defaults, items => {
 			this.settings = items;
@@ -107,18 +107,15 @@ class Settings {
 	}
 
 	get WorkArea(){
-		// Temp fix for people that have the old bug on their storage
-		if(this.settings.workArea == null){
-			this.settings.workArea = {};
-		}
-		return this.settings.workArea[window.hero.mapId];
+		return this.settings.workArea;
 	}
 
 	set WorkArea({x, y, w, h}){
 		if((w-x) == 0 || (h - y) == 0){
-			this.settings.workArea[window.hero.mapId] = null;
+			this.settings.workArea = null;
 		}else{
-			this.settings.workArea[window.hero.mapId] = {x, y, w, h};
+			this.settings.workArea = {x, y, w, h};
 		}
+		
 	}
 }

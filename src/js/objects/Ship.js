@@ -12,7 +12,6 @@ class Ship extends Movable {
 		this.ship = ship;
 		this.firstAttacker = null;
 		this.heroAttacked = false;
-		this.targetShip = null;
 	}
 
 	setTarget(targetX, targetY, time) {
@@ -31,16 +30,6 @@ class Ship extends Movable {
 
 	get percentOfHp() {
 		return (this.hp && this.maxHp) ? MathUtils.percentFrom(this.hp, this.maxHp) : 100;
-	}
-
-	get ish(){
-		for(var i = 0; i < this.modifier.length; i++){
-			var mod = this.modifier[i];
-			if(mod.modifier == 32 && mod.activated){
-				return true;
-			}
-		}
-		return false;
 	}
 
 	update() {
