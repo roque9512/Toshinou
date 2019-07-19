@@ -86,7 +86,7 @@
         "js/handlers/commands/HeroUpdateShieldHandler.js",
         "js/handlers/commands/HeroPetUpdateHandler.js",
         "js/handlers/commands/HeroAttackHandler.js",
-        "js/handlers/commands/HeroAffectedHandler.js",
+        "js/handlers/commands/ModifierUpdateHandler.js",
         "js/handlers/commands/HeroJumpedHandler.js",
         "js/handlers/commands/PetUpdateFuel.js",
         "js/handlers/commands/QuickslotHandler.js",

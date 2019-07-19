@@ -1,105 +1,116 @@
+/*
+  * 
+  *  This Variables Updated By zamvea 
+  *
+ */
+ 
 class Variables {
 	static get assetCreateX() {
-		return "_-b3c";
+		return "_-IX";
 	}
 	
 	static get assetCreateY() {
-		return "_-cZ";
+		return "_-ua";
 	}
 	
 	static get boxType() {
-		return "_-R4K";
+		return "_-n5";
 	}
 	
 	static get gateId() {
-		return "_-62Q";
+		return "_-j3y";
 	}
 	
 	static get gateType() {
-		return "_-144";
+		return "_-X4C";
 	}
 	
 	static get attackerId() {
-		return "_-DT";
+		return "_-64z";
 	}
 	
 	static get heroAttackedId() {
-		return "_-X4l";
+		return "_-B4c";
 	}
 	
 	static get attackHp() {
-		return "_-h3S";
+		return "_-f3m";
 	}
 	
 	static get attackShd() {
-		return "_-58";
+		return "_-o2w";
 	}
 	
 	static get heroInitMaxHp() {
-		return "_-43Z";
+		return "_-o1B";
 	}
 	
 	static get heroInitMaxShd() {
-		return "_-N2y";
+		return "_-2k";
 	}
 	
 	static get heroInitHp() {
-		return "_-R3r";
+		return "_-25P";
 	}
 	
 	static get heroPetId() {
-		return "_-y1f";
+		return "_-3X";
 	}
 	
 	static get hpUpdateMaxHp() {
-		return "_-j2x";
+		return "_-U25";
 	}
 	
 	static get hpUpdateHp() {
-		return "_-F2j";
+		return "_-r5";
 	}
 	
 	static get heroUpdateShd() {
-		return "_-3Y";
+		return "_-th";
 	}
 	
 	static get resource() {
-		return "_-t4e";
+		return "_-N1g";
+	}
+	
+	static get attackerId() {
+		return "_-64z";
 	}
 	
 	static get attackedId() {
-		return "_-DT";
+		return "_-64H";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-M1O";
+		return "_-j3a";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-38";
+		return "_-sy";
 	}
 	
 	static get moveDuration() {
-		return "_-Y3K";
+		return "_-M1p";
 	}
 	
 	static get selectMaxHp() {
-		return "_-j2x";
+		return "_-U25";
 	}
 	
 	static get selectMaxShd() {
-		return "_-N2y";
+		return "_-2k";
 	}
 	
 	static get selectHp() {
-		return "_-F2j";
-	}	
+		return "_-r5";
+	}
 	
+	static get resourceType() {
+		return "_-r18";
+	}
+
 	static get battlestationClanDiplomacy() {
-		return "_-ac"; 
+		return "_-b3K"; 
 	}
 	
-	static get resourceType(){
-		return "_-53D";
-	}
 }

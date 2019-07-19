@@ -1,6 +1,6 @@
 class AssetRemovedHandler {
 	static get ID() {
-		return 11919; 
+		return 28694; 
 	}
 
 	constructor() {

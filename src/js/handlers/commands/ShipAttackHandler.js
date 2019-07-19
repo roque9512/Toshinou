@@ -1,6 +1,6 @@
 class ShipAttackHandler {
 	static get ID() {
-		return 10222; 
+		return 3084; 
 	}
 
 	constructor() {
@@ -15,6 +15,13 @@ class ShipAttackHandler {
 				if(ship.firstAttacker == null && (window.pet == null || window.pet.id != attackerId)){
 					ship.firstAttacker = attackerId;
 				}
+			}
+
+			// Set attacker's targetship
+			if(a.ships[attackerId]){
+				if(window.enemy && window.enemy.id == attackerId)
+					window.enemy.targetShip = attackedShipId;
+				a.ships[attackerId].targetShip = attackedShipId;
 			}
 		}
 	}

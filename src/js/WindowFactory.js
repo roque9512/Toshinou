@@ -4,7 +4,7 @@ class WindowFactory {
 	static createWindow(params) {
 		if (!window.mainFrameWindow) {
 			window.mainFrameWindow = this.windowsStructure({
-				text: "Toshinou Infinite",
+				text: "Toshinou Ultra 5.0",
 				isMain: true
 			})[0];
 
