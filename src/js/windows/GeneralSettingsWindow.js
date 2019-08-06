@@ -2,7 +2,7 @@ class GeneralSettingsWindow {
 	createWindow() {
 	this.botSettingsWindow = WindowFactory.createWindow({
 		width: 320,
-		text: chrome.i18n.getMessage("general")
+		text: "E-Genel Ayarlar"
 	});
 
 	let controls = [
@@ -69,7 +69,7 @@ class GeneralSettingsWindow {
 	{
 		name: 'stopFleeing',
 		type: 'checkbox',
-		labelText: "Stop fleeing when enemy gone",
+		labelText: "Düsman Görünce Dur",
 		appendTo: this.botSettingsWindow,
 		attrs: {
 			checked : window.settings.settings.stopFleeing
@@ -127,8 +127,19 @@ class GeneralSettingsWindow {
 		}
 	},
 	{
+		name: 'gatestonpc',
+		labelText: chrome.i18n.getMessage("gatestonpc"),
+		appendTo: this.botSettingsWindow,
+		attrs: {
+			checked : window.settings.settings.gatestonpc
+		},
+		event: function () {
+		    window.settings.settings.gatestonpc = this.checked;
+			}
+	},
+	{
 		name: 'npcCircleRadius',
-		labelText: "Circle radius <span> ("+window.settings.settings.npcCircleRadius+"px)</span>",
+		labelText: "Daire Yaricapi <span> ("+window.settings.settings.npcCircleRadius+"px)</span>",
 		type: 'range',
 		appendTo: this.botSettingsWindow,
 		labelBefore: true,
@@ -157,7 +168,7 @@ class GeneralSettingsWindow {
 	},
 	{
 		name: 'repairStartPercent',
-		labelText: "Repair when HP <span> ("+window.settings.settings.repairStartPercent+"%)</span>",
+		labelText: "Tamir Et: ----- <span> ("+window.settings.settings.repairStartPercent+"%)</span>",
 		type: 'range',
 		appendTo: this.botSettingsWindow,
 		labelBefore: true,
@@ -174,7 +185,7 @@ class GeneralSettingsWindow {
 	},
 	{
 		name: 'repairEndPercent',
-		labelText: 'Stop repairing at: <span> ('+window.settings.settings.repairEndPercent+'%)</span> ',
+		labelText: 'Tamir Bırak: ----- <span> ('+window.settings.settings.repairEndPercent+'%)</span> ',
 		type: 'range',
 		appendTo: this.botSettingsWindow,
 		labelBefore: true,
@@ -237,9 +248,9 @@ class GeneralSettingsWindow {
 		this[control.name] = ControlFactory.createControl(control);
 	});
 
-	let saveButton = jQuery('<div class="saveButton"><button class="btn_save save btn">💾 Save Settings</button></div>');
+	let saveButton = jQuery('<div class="saveButton"><button class="btn_save save btn">💾 Ayarlari Kaydet</button></div>');
 	this.botSettingsWindow.append(saveButton);
-	let clearButton = jQuery('<div class="clearButton"><button class="btn_clear save btn">♲ Clear Saved Settings</button></div>');
+	let clearButton = jQuery('<div class="clearButton"><button class="btn_clear save btn">♲ Kaydedilmis Ayarlari Temizle</button></div>');
 	this.botSettingsWindow.append(clearButton);
 	}
 }

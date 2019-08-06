@@ -2,7 +2,8 @@ class GGSettingsWindow {
 	createWindow() {
 		this.GGSettingsWindow = WindowFactory.createWindow({
 			width: 320,
-			text: chrome.i18n.getMessage("gghelper")
+			maxHeight: 300,
+			text: "G-GG Yardımcisi"
 		});
 
 		let controls = [{

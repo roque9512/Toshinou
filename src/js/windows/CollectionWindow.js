@@ -7,14 +7,14 @@ class CollectionWindow {
 		this.collectionWindow = WindowFactory.createWindow({
 			width: 320,
 			maxHeight: 300,
-			text: "Collection"
+			text: "T-Toplama"
 		});
 
 		let controls = [
 			{
 				name: 'bonusBox',
 				type: 'checkbox',
-				labelText: 'Collect boxes',
+				labelText: 'Kutulari Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.bonusBox
@@ -26,7 +26,7 @@ class CollectionWindow {
 			{
 				name: 'eventBox',
 				type: 'checkbox',
-				labelText: 'Collect Event Boxes',
+				labelText: 'Event Kutularini Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.eventBox
@@ -38,7 +38,7 @@ class CollectionWindow {
 			{
 				name: 'materials',
 				type: 'checkbox',
-				labelText: 'Collect materials',
+				labelText: 'Materyalleri Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.materials
@@ -50,7 +50,7 @@ class CollectionWindow {
 			{
 				name: 'cargoBox',
 				type: 'checkbox',
-				labelText: 'Collect cargo',
+				labelText: 'Kargo Kutularini Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.cargoBox
@@ -62,7 +62,7 @@ class CollectionWindow {
 			{
 				name: 'greenOrGoldBooty',
 				type: 'checkbox',
-				labelText: 'Collect green or gold booty',
+				labelText: 'Yesil Yada Altin Ganimet Kutularini Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.greenOrGoldBooty
@@ -74,7 +74,7 @@ class CollectionWindow {
 			{
 				name: 'blueBooty',
 				type: 'checkbox',
-				labelText: 'Collect blue booty',
+				labelText: 'Mavi Ganimet Kutusunu Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.blueBooty
@@ -86,7 +86,7 @@ class CollectionWindow {
 			{
 				name: 'redBooty',
 				type: 'checkbox',
-				labelText: 'Collect red booty',
+				labelText: 'Kirmizi Ganimet Kutusunu Topla',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.redBooty
@@ -98,7 +98,7 @@ class CollectionWindow {
 			{
 				name: 'masqueBooty',
 				type: 'checkbox',
-				labelText: 'Collect masque booty',
+				labelText: 'Bu Botu SlayerViper Türkçeleştirmiştir!',
 				appendTo: this.collectionWindow,
 				attrs: {
 					checked : window.settings.settings.masqueBooty

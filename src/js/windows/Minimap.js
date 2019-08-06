@@ -6,7 +6,7 @@ class Minimap {
 	createWindow() {
 		this.minimap = WindowFactory.createWindow({
 			width: 320,
-			text: chrome.i18n.getMessage("minimap")
+			text: "M-MiniMap"
 		});
 
 		this.canvas = jQuery("<canvas/>", {

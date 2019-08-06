@@ -4,7 +4,7 @@ class WindowFactory {
 	static createWindow(params) {
 		if (!window.mainFrameWindow) {
 			window.mainFrameWindow = this.windowsStructure({
-				text: "Toshinou Ultra 5.0",
+				text: "TOSHINOU 1.0 ROQUE",
 				isMain: true
 			})[0];
 
@@ -90,10 +90,10 @@ class WindowFactory {
 			window.mainWindow = pane;
 			window.statusMiniWindow = true;
 
-			let cntBtnPlay = jQuery('<div class="cnt_btn_play"><button class="btn_play in_play btn">Play</button></div>');
+			let cntBtnPlay = jQuery('<div class="cnt_btn_play"><button class="btn_play in_play btn">Baslat</button></div>');
 			header.prepend(cntBtnPlay);
 
-			let cntMiniWindow = jQuery('<div class="cnt_minimize_window">B</div>');
+			let cntMiniWindow = jQuery('<div class="cnt_minimize_window">SLY</div>');
 			$("body").append(cntMiniWindow);
 
 			cntMiniWindow.draggable();

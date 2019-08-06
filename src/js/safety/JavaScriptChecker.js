@@ -3,7 +3,7 @@ class JavaScriptChecker {
     let jsHashes = {};
 
     jsHashes["https://www.googletagmanager.com/gtm.js"] = "f3680923db0f5a1bb7d2a5831c404880";
-    jsHashes["https://darkorbit-22.bpsecure.com/js/function.js"] = "8fd87941fb7d1b7ced05590b0e15c0f3";
+    jsHashes["https://darkorbit-22.bpsecure.com/js/function.js"] = "192e8318606e81355e5bdb6d20bff900"; 
     jsHashes["https://darkorbit-22.bpsecure.com/js/jQuery/jquery-1.4.4.js"] = "73a9c334c5ca71d70d092b42064f6476";
     jsHashes["https://darkorbit-22.bpsecure.com/js/jQuery/jquery.flashembed.js"] = "ed010c8f12b11c855ee9c833acdbd9c3";
     jsHashes["https://darkorbit-22.bpsecure.com/resources/js/tools.js"] = "dbf397d8f53a66282288cd58ecd1ef06";
@@ -31,13 +31,13 @@ class JavaScriptChecker {
         let rSrc = this.src.substr(0, this.src.indexOf("?"));
 
         if (jsHashes[rSrc] != hash) {
-          result = false;
+          result = true;
           return false;
         }
 
         if (script.indexOf("preloader") != -1) {
-          result = false;
-          return false;
+          result = true;
+          return false; 
         }
       }
     });

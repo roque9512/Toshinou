@@ -1,18 +1,18 @@
 {
-  "toshidescription": {
-    "message": "Su ana kadar Darkorbit icin yapilmis en iyi botlardan bir tanesidir.",
-    "description": "Toshinou Aciklamasi"
+  "SlayerViper": {
+    "message": "Su ana kadar Darkorbit icin yapilmis en iyi SlayerViper botlarindan bir tanesidir.",
+    "description": "SlayerViper Aciklamasi"
   },
   "desextension": {
-    "message": "Freshek tarafindan kodlanmistir.",
-    "description": "Toshinou Eklenti Aciklamasi"
+    "message": "Bu Bot OyuncuAdam ve SlayerViper Tarafından Türkçeleştirilmiştir. Burdan OyuncuAdama Sonsuz Teşekkürler!",
+    "description": "SlayerViper Eklenti Aciklamasi"
   },
   "appearance": {
     "message": "Gorunum"
   },
   "translateby": {
     "message": "",
-    "description": "Toshinou Eklenti Aciklamasi"
+    "description": "SlayerViper Eklenti Aciklamasi"
   },
   "discordserver": {
     "message": "Discord Sunucusu"
@@ -225,39 +225,39 @@
     "message": "Sifirla"
   },
   "shipsettings": {
-    "message": "Ship settings"
+    "message": "Gemi Ozellikleri"
   },
   "changedroneformation": {
-    "message": "Change Drone Formation"
+    "message": "Drone Duzeni Degistir"
   },
   "attackformationslot": {
-    "message": "Attack Formation Slot: "
+    "message": "Saldiri Duzeni: "
   },
   "flyingformationslot": {
-    "message": "Flying Formation Slot: "
+    "message": "Ucus Duzeni: "
   },
   "droneformations": {
-    "message": "Drone Formations"
+    "message": "Drone Duzeni"
   },
   "shipability": {
-    "message": "Ship Ability "
+    "message": "Gemi Ozelligi"
   },
   "useability": {
-    "message": "Use Ability"
+    "message": "Gemi Ozelligi"
   },
   "abilityslot": {
-    "message": "Ability slot"
+    "message": "Yetenek slotu"
   },
   "camouflageslot": {
-    "message": "Camouflage slot: "
+    "message": "K "
   },
   "enablepet": {
-    "message": "Enable pet and pet repair"
+    "message": "Pet Kullanimi ve Tamiri"
   },
   "petmodule": {
-    "message": "Pet Module: "
+    "message": "Pet Ozelligi: "
   },
   "petrevivelimit": {
-    "message": "Pet repair limit: <span>(10)</span> "
+    "message": "Pet tamir limiti: <span>(10)</span> "
   }
 }

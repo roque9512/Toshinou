@@ -3,7 +3,8 @@ class StatisticWindow {
   createWindow() {
     this.botStatisticWindow = WindowFactory.createWindow({
       width: 320,
-      text: chrome.i18n.getMessage("statistic")
+            maxHeight: 300,
+			text: "I-Istatistik | Bu Botu SlayerViper Türkçeleştirmiştir!"
     });
     this.connected = false;
 

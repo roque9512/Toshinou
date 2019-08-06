@@ -91,7 +91,7 @@ $(document).ready(function () {
 
 
     hm.registerEvent("updateHeroPos", new HeroPositionUpdateEventHandler());
-    hm.registerEvent("movementDone", new MovementDoneEventHandler());
+    hm.registerEvent("movennentDone", new MovementDoneEventHandler());
     hm.registerEvent("isDisconnected", new HeroDisconnectedEventHandler());
     hm.registerEvent("isConnected", new HeroConnectedEventHandler());
 
@@ -178,13 +178,13 @@ function init() {
 	let cntBtnPlay = $('.cnt_btn_play .btn_play');
 	cntBtnPlay.on('click', (e) => {
 		if (window.statusPlayBot) {
-			cntBtnPlay.html("Play");
+			cntBtnPlay.html("Baslat");
 			cntBtnPlay.removeClass('in_stop').addClass('in_play');
 			api.resetTarget("all");
 			window.fleeingFromEnemy = false;
 			window.settings.settings.pause = true;
 		} else {
-			cntBtnPlay.html("Stop");
+			cntBtnPlay.html("Durdur");
 			cntBtnPlay.removeClass('in_play').addClass('in_stop');
 			window.settings.settings.pause = false;
 		}
@@ -204,7 +204,7 @@ function init() {
 		if(v.refreshed && window.settings.settings.enableRefresh){
 			let cntBtnPlay = $('.cnt_btn_play .btn_play');
 
-			cntBtnPlay.html("Stop");
+			cntBtnPlay.html("Durdur");
 			cntBtnPlay.removeClass('in_play').addClass('in_stop');
 			window.settings.settings.pause = false;
 		}
@@ -548,6 +548,7 @@ function logic() {
 			}
 		}
 	}
+
 
 	if(api.targetBoxHash == null && api.targetShip == null && window.movementDone && window.settings.settings.moveRandomly){
 		if(window.settings.settings.autoCamo){

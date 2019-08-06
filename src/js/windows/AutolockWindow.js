@@ -6,14 +6,14 @@ class AutolockWindow {
 	createWindow() {
 		this.autolockWindow = WindowFactory.createWindow({
 			width: 320,
-			text: "Autolocker"
+			text: "A-Oto Kitleme"
 		});
 
 		let options = [
 		{
 			name: 'lockPlayers',
 			type: 'checkbox',
-			labelText: 'Autolock Players (key: z)',
+			labelText: 'Oyunculara Otomatik Kilitle (Anahtar: Z)',
 			appendTo: this.autolockWindow,
 			attrs:{
 				checked: window.settings.settings.lockPlayer
@@ -25,7 +25,7 @@ class AutolockWindow {
 		{
 			name: 'lockNpc',
 			type: 'checkbox',
-			labelText: 'Autolock NPCs (key: x)',
+			labelText: 'NPC lere Otomatik Kilitle (Anahtar: X)',
 			appendTo: this.autolockWindow,
 			attrs:{
 				checked: window.settings.settings.lockNpc
@@ -37,7 +37,7 @@ class AutolockWindow {
 		{
 			name: 'excludeNpcs',
 			type: 'checkbox',
-			labelText: 'Exclude NPCs from locking',
+			labelText: 'NPClerin kilitlenmesini engelle',
 			appendTo: this.autolockWindow,
 			attrs:{
 				checked: window.settings.settings.excludeNpcs

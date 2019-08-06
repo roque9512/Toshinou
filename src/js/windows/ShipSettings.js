@@ -2,7 +2,7 @@ class ShipSettings{
     createWindow() {
         this.shipSettingsWindow = WindowFactory.createWindow({
             width: 320,
-            text: "Ship Settings"
+            text: "A-Gemi Ayarlari"
         });
     
         let controls = [
@@ -21,7 +21,7 @@ class ShipSettings{
         },
         {
             name: 'autoCamouflage',
-            labelText: "Auto camo",
+            labelText: "Oto Kamuflaj",
             type: 'checkbox',
             appendTo: this.shipSettingsWindow,
             attrs:{
@@ -34,7 +34,7 @@ class ShipSettings{
         },
         {
             name: 'attackConfig',
-            labelText: chrome.i18n.getMessage('attackconfig'),
+            labelText: "Saldiri Konfisi",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"1":1, "2":2},
@@ -47,7 +47,7 @@ class ShipSettings{
         },
         {
             name: 'flyingConfig',
-            labelText: chrome.i18n.getMessage('flyingconfig'),
+            labelText: "Ucus Konfisi",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"1":1, "2":2},
@@ -60,7 +60,7 @@ class ShipSettings{
         },
         {
             name: 'fleeingConfig',
-            labelText: "Fleeing Config: ",
+            labelText: "Kacıs Konfisi: ",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"1":1, "2":2},
@@ -74,7 +74,7 @@ class ShipSettings{
         },
         {
             name: 'attackFormation',
-            labelText: chrome.i18n.getMessage('attackformationslot'),
+            labelText: "Saldiri Duzeni",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
@@ -87,7 +87,7 @@ class ShipSettings{
         },
         {
             name: 'flyingFormation',
-            labelText: chrome.i18n.getMessage('flyingformationslot'),
+            labelText: "Ucus Duzeni",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
@@ -100,7 +100,7 @@ class ShipSettings{
         },
         {
             name: 'fleeingFormation',
-            labelText: "Fleeing Formation Slot: ",
+            labelText: "Kacıs Formasyon Slotu: ",
             type: "select",
             appendTo: this.shipSettingsWindow,
             options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
@@ -114,7 +114,7 @@ class ShipSettings{
         },
         {
             name: 'abilitySlot',
-            labelText: chrome.i18n.getMessage('abilityslot'),
+            labelText: "Yetenek Slotu",
             type: "select",
             disabled: true && !window.settings.settings.useAbility,
             appendTo: this.shipSettingsWindow,
@@ -129,7 +129,7 @@ class ShipSettings{
         },
         {
             name: 'camouflageSlot',
-            labelText: chrome.i18n.getMessage('camouflageslot'),
+            labelText: "Kamuflaj Slotu",
             type: "select",
             disabled: true && !window.settings.settings.autoCamo,
             appendTo: this.shipSettingsWindow,

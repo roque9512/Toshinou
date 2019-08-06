@@ -1,22 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "Toshinou Infinite",
-  "version": "5.0",
+  "name": "Toshinou Infinite Roque",
+  "version": "1.0",
   "default_locale": "en",
   "description": "__MSG_desextension__",
     "page_action": {
       "default_icon": {
-        "16": "images/Toshinou-logo-infinite-loop-16x16.png",
-        "32": "images/Toshinou-logo-infinite-loop-32x32.png",
-        "48": "images/Toshinou-logo-infinite-loop-48x48.png",
-        "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+        "16": "images/123123_16x16.png",
+        "32": "images/123123_32x32.png",
+        "48": "images/123123_48x48.png",
+        "128": "images/123123_128x128.png"
       }
     },
   "icons": {
-    "16": "images/Toshinou-logo-infinite-loop-16x16.png",
-    "32": "images/Toshinou-logo-infinite-loop-32x32.png",
-    "48": "images/Toshinou-logo-infinite-loop-48x48.png",
-    "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+    "16": "images/123123_16x16.png",
+    "32": "images/123123_32x32.png",
+    "48": "images/123123_48x48.png",
+    "128": "images/123123_128x128.png"
   },
 
   "content_scripts": [

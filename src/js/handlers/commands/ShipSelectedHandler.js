@@ -9,9 +9,9 @@ class ShipSelectedHandler {
 
 			let ship = a.ships[parsedJson.userId];
 			if(ship != null){
-				ship.maxHp = parsedJson[Variables.selectMaxHp];
+				ship.maxHp = parsedJson[Variables.selectMaxHp]; 
 				ship.maxShd = parsedJson[Variables.selectMaxShd];
-				ship.hp = parsedJson[Variables.selectHp];
+				ship.hp = parsedJson[Variables.gateType];
 				ship.shd = parsedJson.shield;
 
 				window.attackWindow.hp(ship.hp);

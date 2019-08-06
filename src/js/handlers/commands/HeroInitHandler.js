@@ -26,11 +26,11 @@ class HeroInitHandler {
 			window.pet = null;
 			a.currentModule = -1;
 			window.invertedMovement = false;
-
+ 
 			if (window.hero == null) {
 				window.hero = new Hero(heroJson.x, heroJson.y, heroJson.factionId, heroJson.userId, heroJson.mapId);
 			}
-			window.hero.maxHp = heroJson[Variables.heroInitMaxHp];
+			window.hero.maxHp = heroJson[Variables.gateId];
 			window.hero.hp = heroJson[Variables.heroInitHp];
 			window.hero.maxShd = heroJson[Variables.heroInitMaxShd];
 			window.hero.shd = heroJson["shield"];

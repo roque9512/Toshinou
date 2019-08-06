@@ -3,11 +3,11 @@ class NpcSettingsWindow {
 		this.npcSettingsWindow = WindowFactory.createWindow({
 			width: 320,
 			maxHeight: 300,
-			text: chrome.i18n.getMessage("excludenpcto")
+			text: "T-Haric Tutulacak NPC listesi"
 		});
 
 		let controls = [];
-		let columns = ["Block", "Name", "Priority","Range"];
+		let columns = ["Block", "-Ad-", "Oncelik","Menzil"];
 		let table = ControlFactory.createTable(columns);
 		this.knownNpcList.forEach((n, i) => {
 			controls.push([
