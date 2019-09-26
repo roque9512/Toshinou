@@ -1,0 +1,263 @@
+{
+  "toshidescription": {
+    "message": "Чит/инструмент/бот/что угодно для браузерной флеш-игры под названием DarkOrbit. Он делает некоторые довольно интересные вещи и все еще находится в интенсивной разработке.",
+    "description": "Toshinou description"
+  },
+  "desextension": {
+    "message": "Бот для DarkOrbit, созданный Freshek.",
+    "description": "Описание расширения Toshinou"
+  },
+  "appearance": {
+    "message": "Внешний вид"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Описание расширения Toshinou"
+  },
+  "discordserver": {
+    "message": "Сервер Discord"
+  },
+  "saveall": {
+    "message": "Сохранить все"
+  },
+  "headercolor": {
+    "message": "Цвет заголовка"
+  },
+  "opacity": {
+    "message": "Прозрачность"
+  },
+  "windowbackgroundcolor": {
+    "message": "Фон окна"
+  },
+  "statisticwindow": {
+    "message": "Окно статистики"
+  },
+  "windowstotabs": {
+    "message": "Вкладки вместо окон"
+  },
+  "speedformat": {
+    "message": "Формат скорости"
+  },
+  "hour": {
+    "message": "в час"
+  },
+  "min": {
+    "message": "в минуту"
+  },
+  "attackconfig": {
+    "message": "Конфигурация атаки:"
+  },
+  "flyingconfig": {
+    "message": "Конфигурация полёта:"
+  },
+  "advanced": {
+    "message": "Продвинутым (Новичкам не трогать)"
+  },
+  "logictick": {
+    "message": "Время на логику (мс)"
+  },
+  "enablerefresh": {
+    "message": "Включить функцию обновления"
+  },
+  "refreshtime": {
+    "message": "Интервал обновления в минутах"
+  },
+  "clearsettings": {
+    "message": "Очистить сохраненные настройки (Функция обновления)"
+  },
+  "reviveat": {
+    "message": "Возрожение на: "
+  },
+  "base": {
+    "message": "База"
+  },
+  "gate": {
+    "message": "Портал"
+  },
+  "spot": {
+    "message": "На месте"
+  },
+  "norevive": {
+    "message": "Не возрождаться"
+  },
+  "revivelimit": {
+    "message": "Лимит возрождений: "
+  },
+  "workmap": {
+    "message": "Карта полета"
+  },
+  "any": {
+    "message": "Любая"
+  },
+  "boxsettings": {
+    "message": "Настройка сбора"
+  },
+  "bonusbox": {
+    "message": "Бонусные коробки"
+  },
+  "materials": {
+    "message": "Материалы"
+  },
+  "cargobox": {
+    "message": "Ресурсы с NPCs"
+  },
+  "greenorgoldbooty": {
+    "message": "Зеленые | Золотые сундуки"
+  },
+  "redbooty": {
+    "message": "Красные сундуки"
+  },
+  "bluebooty": {
+    "message": "Синии сундуки"
+  },
+  "masquebooty": {
+    "message": "Апокалиптические сундуки"
+  },
+  "target": {
+    "message": "Цель: "
+  },
+  "hp": {
+    "message": "Прочность: "
+  },
+  "shd": {
+    "message": "Щит: "
+  },
+  "palladiumbot": {
+    "message": "Палладиум бот"
+  },
+  "moverandomly": {
+    "message": "Случайные перемещения"
+  },
+  "killnpcs": {
+    "message": "Атаковать NPC"
+  },
+  "fleefromenemy": {
+    "message": "Убегать от врага"
+  },
+  "avoidattackednpc": {
+    "message": "Избегать атаки NPC"
+  },
+  "circle": {
+    "message": "Крутить"
+  },
+  "circleradius": {
+    "message": "Радиус кручения <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Не крутить при прочности < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Восстонавливать прочность при < <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Прыжок и возврат"
+  },
+  "autochangeconfig": {
+    "message": "Смена конфигураций"
+  },
+  "dodgethecbs": {
+    "message": "Избегать базы"
+  },
+  "resettarget": {
+    "message": "Сброс цели при прочности < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Сохранить настройки и включить обновление"
+  },
+  "attackdetails": {
+    "message": "Подробности атаки"
+  },
+  "general": {
+    "message": "Общее"
+  },
+  "gghelper": {
+    "message": "GG помошник"
+  },
+  "ggbot": {
+    "message": "GG Bot (Тестируется)"
+  },
+  "jumpin": {
+    "message": "Прыгнуть в"
+  },
+  "minimap": {
+    "message": "Миникарта"
+  },
+  "excludenpcto": {
+    "message": "Исключение атаки"
+  },
+  "statistic": {
+    "message": "Статистика"
+  },
+  "startat": {
+    "message": "Начал в: "
+  },
+  "credits": {
+    "message": "Кредиты: "
+  },
+  "uridium": {
+    "message": "Уридиум: "
+  },
+  "ggenergy": {
+    "message": "GG энергия: "
+  },
+  "ammo": {
+    "message": "Боеприпасы: "
+  },
+  "experiencie": {
+    "message": "Опыт: "
+  },
+  "honor": {
+    "message": "Честь: "
+  },
+  "rank": {
+    "message": "Очки ранга: "
+  },
+  "death": {
+    "message": "Количество смертей: "
+  },
+  "speed": {
+    "message": "Скорость: "
+  },
+  "runtime": {
+    "message": "Время выполнения: "
+  },
+  "reset": {
+    "message": "Сбросить"
+  },
+  "shipsettings": {
+    "message": "Настройки корабля"
+  },
+  "changedroneformation": {
+    "message": "Смена формации дроидов"
+  },
+  "attackformationslot": {
+    "message": "Слот формации атаки: "
+  },
+  "flyingformationslot": {
+    "message": "Слот формации полёта: "
+  },
+  "droneformations": {
+    "message": "Формация дроидов"
+  },
+  "shipability": {
+    "message": "Навык корабля "
+  },
+  "useability": {
+    "message": "Использовать навык"
+  },
+  "abilityslot": {
+    "message": "Слот навыка"
+  },
+  "camouflageslot": {
+    "message": "Слот камуфляжа: "
+  },
+  "enablepet": {
+    "message": "Включить ПЕТ и ремонта ПЕТ"
+  },
+  "petmodule": {
+    "message": "Механизм ПЕТа: "
+  },
+  "petrevivelimit": {
+    "message": "Предел ремонта ПЕТа: <span>(10)</span> "
+  }
+}

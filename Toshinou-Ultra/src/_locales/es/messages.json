@@ -1,0 +1,263 @@
+﻿{
+  "toshidescription": {
+    "message": "Una ventaja/herramienta/bot/lo que sea para un juego de navegador llamado DarkOrbit. Hace algunas cosas bastante bien y todavía está bajo un duro desarrollo.",
+    "description": "Descripción de Toshinou"
+  },
+  "desextension": {
+    "message": "Bot para DarkOrbit, creado por Freshek.",
+    "description": "Descripción de la Extención Toshinou"
+  },
+  "appearance": {
+    "message": "Apariencia"
+  },
+  "translateby": {
+    "message": "Traducido por MauThunder",
+    "description": "Descripción de la Extención Toshinou"
+  },
+  "discordserver": {
+    "message": "Servidor de Discord"
+  },
+  "saveall": {
+    "message": "Guardar Todo"
+  },
+  "headercolor": {
+    "message": "Color de Encabezado"
+  },
+  "opacity": {
+    "message": "Opacidad"
+  },
+  "windowbackgroundcolor": {
+    "message": "Color de Fondo"
+  },
+  "statisticwindow": {
+    "message": "Ventana de Estadísticas"
+  },
+  "windowstotabs": {
+    "message": "Mostrar Pestañas en lugar de Ventanas"
+  },
+  "speedformat": {
+    "message": "Formato de Velocidad"
+  },
+  "hour": {
+    "message": "Hora"
+  },
+  "min": {
+    "message": "Minuto"
+  },
+  "attackconfig": {
+    "message": "Configuración de Ataque:"
+  },
+  "flyingconfig": {
+    "message": "Configuración de Velocidad:"
+  },
+  "advanced": {
+    "message": "Avanzado(principiantes alejense!)"
+  },
+  "logictick": {
+    "message": "Logic tick (ms)"
+  },
+  "enablerefresh": {
+    "message": "Activar función Refresh"
+  },
+  "refreshtime": {
+    "message": "Recargar la pagina cada (min): "
+  },
+  "clearsettings": {
+    "message": "Limpiar configuraciones (Función Refresh)"
+  },
+  "reviveat": {
+    "message": "Revivir en: "
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Portal"
+  },
+  "spot": {
+    "message": "En el sitio"
+  },
+  "norevive": {
+    "message": "No reparar"
+  },
+  "revivelimit": {
+    "message": "Limite de revivir: "
+  },
+  "workmap": {
+    "message": "Mapa"
+  },
+  "any": {
+    "message": "Cualquiera"
+  },
+  "boxsettings": {
+    "message": "Configuración de Recolección"
+  },
+  "bonusbox": {
+    "message": "Cajas de Bono"
+  },
+  "materials": {
+    "message": "Materiales"
+  },
+  "cargobox": {
+    "message": "Cajas de Carga"
+  },
+  "greenorgoldbooty": {
+    "message": "Cofres Verdes | Dorados"
+  },
+  "redbooty": {
+    "message": "Cofres Rojos"
+  },
+  "bluebooty": {
+    "message": "Cofres Azules"
+  },
+  "masquebooty": {
+    "message": "Cofres Apocalipsis"
+  },
+  "target": {
+    "message": "Objetivo: "
+  },
+  "hp": {
+    "message": "Vida: "
+  },
+  "shd": {
+    "message": "Escudo: "
+  },
+  "palladiumbot": {
+    "message": "Bot de Paladio"
+  },
+  "moverandomly": {
+    "message": "Moverse Aleatoriamente"
+  },
+  "killnpcs": {
+    "message": "Matar NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Huir de los Enemigos"
+  },
+  "avoidattackednpc": {
+    "message": "Evitar NPCs atacados por otros<br>"
+  },
+  "circle": {
+    "message": "Girar en Círculos"
+  },
+  "circleradius": {
+    "message": "Radio del Círculo <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "No girar cuando el HP sea menor de 25%"
+  },
+  "repairwhenhp": {
+    "message": "Repara cuando el HP sea menor de <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Saltar portal y Regresar"
+  },
+  "autochangeconfig": {
+    "message": "Cambiar Config Automaticamente"
+  },
+  "dodgethecbs": {
+    "message": "Esquivar Estación de Batalla"
+  },
+  "resettarget": {
+    "message": "Restablecer el objetivo cuando la vida sea menor de 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Guardar cambios y Activar Refresh"
+  },
+  "attackdetails": {
+    "message": "Detalles del Objetivo"
+  },
+  "general": {
+    "message": "General"
+  },
+  "gghelper": {
+    "message": "Puertas Galácticas"
+  },
+  "ggbot": {
+    "message": "GG Bot (En Fase de Pruebas)"
+  },
+  "jumpin": {
+    "message": "Saltar a"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Excluir NPCs para Atacar"
+  },
+  "statistic": {
+    "message": "Estadísticas"
+  },
+  "startat": {
+    "message": "Comienzo: "
+  },
+  "credits": {
+    "message": "Créditos: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "Energías Extra: "
+  },
+  "ammo": {
+    "message": "Munición: "
+  },
+  "experiencie": {
+    "message": "Experiencia: "
+  },
+  "honor": {
+    "message": "Honor: "
+  },
+  "rank": {
+    "message": "Puntos de Rango: "
+  },
+  "death": {
+    "message": "Número de Muertes: "
+  },
+  "speed": {
+    "message": "Velocidad: "
+  },
+  "runtime": {
+    "message": "Tiempo activo: "
+  },
+  "reset": {
+    "message": "Reiniciar Estadísticas"
+  },
+  "shipsettings": {
+    "message": "Configuración de la Nave"
+  },
+  "changedroneformation": {
+    "message": "Cambiar la formación de los drones"
+  },
+  "attackformationslot": {
+    "message": "Slot de la formación de ataque: "
+  },
+  "flyingformationslot": {
+    "message": "Slot de la formación de velocidad: "
+  },
+  "droneformations": {
+    "message": "Formaciones de drones"
+  },
+  "shipability": {
+    "message": "Habilidad de nave "
+  },
+  "useability": {
+    "message": "Usar habilidad"
+  },
+  "abilityslot": {
+    "message": "Slot de la habilidad"
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}

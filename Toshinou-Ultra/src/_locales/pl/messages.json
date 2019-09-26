@@ -1,0 +1,263 @@
+{
+  "toshidescription": {
+    "message": "A cheat/tool/bot/whatever dla gry przegladarkowej DarkOrbit. Robi całkiem fajne rzeczy i jest wciaż w trakcie intensywnego rozwoju.",
+    "description": "Opis Toshinou"
+  },
+  "desextension": {
+    "message": "Bot dla DarkOrbit, stworzony przez Freshek.",
+    "description": "Opis Rozszerzen Toshinou"
+  },
+  "appearance": {
+    "message": "Wygląd"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Opis rozszerzenia Toshinou"
+  },
+  "discordserver": {
+    "message": "Serwer Discord "
+  },
+  "saveall": {
+    "message": "Zapisz wszystko"
+  },
+  "headercolor": {
+    "message": "Kolor nagłowka"
+  },
+  "opacity": {
+    "message": "nieprzezroczystość"
+  },
+  "windowbackgroundcolor": {
+    "message": "Kolor Tła okna"
+  },
+  "statisticwindow": {
+    "message": "Okno statystyczne"
+  },
+  "windowstotabs": {
+    "message": "Tabulatory zamiast okien"
+  },
+  "speedformat": {
+    "message": "Format szybkości"
+  },
+  "hour": {
+    "message": "godzina"
+  },
+  "min": {
+    "message": "min"
+  },
+  "attackconfig": {
+    "message": "konfa do bicia"
+  },
+  "flyingconfig": {
+    "message": "konfa do latania"
+  },
+  "advanced": {
+    "message": "Zaawansowane (Nie dla początkujących!)"
+  },
+  "logictick": {
+    "message": "Reagowanie (ms)"
+  },
+  "enablerefresh": {
+    "message": "Włącz funkcje odświerzania"
+  },
+  "refreshtime": {
+    "message": "Odśwież strone co (min): "
+  },
+  "clearsettings": {
+    "message": "Wyczyść ustawienia (Ośwież strone ustawienia Funkcji)"
+  },
+  "reviveat": {
+    "message": "Napraw na: "
+  },
+  "base": {
+    "message": "Bazie"
+  },
+  "gate": {
+    "message": "Porcie"
+  },
+  "spot": {
+    "message": "Miejscu"
+  },
+  "norevive": {
+    "message": "Nie naprawiaj"
+  },
+  "revivelimit": {
+    "message": "Limit naprawień: "
+  },
+  "workmap": {
+    "message": "Mapa: "
+  },
+  "any": {
+    "message": "Any"
+  },
+  "boxsettings": {
+    "message": "ustawienia skrzynek"
+  },
+  "bonusbox": {
+    "message": "Skrzynki bonusowe"
+  },
+  "materials": {
+    "message": "Materiały"
+  },
+  "cargobox": {
+    "message": "Skrzynki cargo"
+  },
+  "greenorgoldbooty": {
+    "message": "Złote | Zielone Skrzynie pirackie"
+  },
+  "redbooty": {
+    "message": "Czerwone Skrzynie pirackie"
+  },
+  "bluebooty": {
+    "message": "Niebieskie Skrzynie pirackie"
+  },
+  "masquebooty": {
+    "message": " Skrzynie Apokalipsy"
+  },
+  "target": {
+    "message": "Cel: "
+  },
+  "hp": {
+    "message": "HP: "
+  },
+  "shd": {
+    "message": "SHD: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Losowe kliknięcia"
+  },
+  "killnpcs": {
+    "message": "Zabijaj NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Uciekaj od wrogów"
+  },
+  "avoidattackednpc": {
+    "message": "Nie Bij czyjegoś NPCs"
+  },
+  "circle": {
+    "message": "Orbitkuj"
+  },
+  "circleradius": {
+    "message": "Orbitkowanie <span> ($$$px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Nie Orbitkuj gdy HP NPC jest mniej niż < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Napraw gdy Twoje HP spadnie poniżej< <span> ($$$%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Skocz i wróć"
+  },
+  "autochangeconfig": {
+    "message": "Auto zmiana konfy"
+  },
+  "dodgethecbs": {
+    "message": "Unikaj stacji bojowej"
+  },
+  "resettarget": {
+    "message": "Resetuj target gdy NPC ma < 25% HP "
+  },
+  "savesettingsandenable": {
+    "message": "Zapisz ustawienia & Włacz odswieżanie"
+  },
+  "attackdetails": {
+    "message": "Szczegóły ataku"
+  },
+  "general": {
+    "message": "General"
+  },
+  "gghelper": {
+    "message": "Wrota"
+  },
+  "ggbot": {
+    "message": "GG Bot (W Testach)"
+  },
+  "jumpin": {
+    "message": "Skocz w"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Zaznacz NPC których ma nie bić"
+  },
+  "statistic": {
+    "message": "Statystyki"
+  },
+  "startat": {
+    "message": "Zaczęto o: "
+  },
+  "credits": {
+    "message": "Kredki: "
+  },
+  "uridium": {
+    "message": "Urka: "
+  },
+  "ggenergy": {
+    "message": "Energia: "
+  },
+  "ammo": {
+    "message": "Ammo: "
+  },
+  "experiencie": {
+    "message": "PD: "
+  },
+  "honor": {
+    "message": "Poważka: "
+  },
+  "rank": {
+    "message": "Punkty Rangi: "
+  },
+  "death": {
+    "message": "Padnięcia: "
+  },
+  "speed": {
+    "message": "Szybkość: "
+  },
+  "runtime": {
+    "message": "Czas latania: "
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot: "
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot: "
+  },
+  "droneformations": {
+    "message": "Drone Formations"
+  },
+  "shipability": {
+    "message": "Ship Ability "
+  },
+  "useability": {
+    "message": "Use Ability"
+  },
+  "abilityslot": {
+    "message": "Ability slot"
+  },
+  "camouflageslot": {
+    "message": "Camouflage slot: "
+  },
+  "enablepet": {
+    "message": "Enable pet and pet repair"
+  },
+  "petmodule": {
+    "message": "Pet Module: "
+  },
+  "petrevivelimit": {
+    "message": "Pet repair limit: <span>(10)</span> "
+  }
+}
